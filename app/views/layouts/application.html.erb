@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+  <title>Tred</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<section id="new ride">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <header id="page-header">
+      <span class="logo">Tred Tracker</span>
+      <ul class="nav">
+        <li><a href="#">My Rides</a></li>
+        <li><a href="#songs/new">Add a ride</a></li>
+      </ul>
+    </header>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container-narrow">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <% if user_signed_in? %>
+            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to "Sign in", new_user_session_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id='map' class='dark'></div>
+
+</section>
+<!-- new ride -->
+<form>
+  <h1>Add a new ride</h1>
+  <div class="inset">
+  <p>
+    <label for="email">Start Point</label>
+    <input type="text" placeholder="Where'd you start your ride?"name="email" id="email">
+  </p>
+  <p>
+    <label for="password">End Point</label>
+    <input type="text" placeholder="...And where'd you ride to?"name="password" id="password">
+  </p>
+  <p>
+    <label for="password">Distance</label>
+    <input type="text" placeholder="We'll fill this in for you"name="password" id="distance">
+  </p>
+  <p>
+    <label for="password">Time</label>
+    <input type="text" placeholder="How long was your ride?"name="password" id="time">
+  </p>
+  <p>
+    <label for="password">Notes</label>
+    <input type="text" placeholder="Leave yourself some notes about the ride"name="password" id="notes">
+  </p>
+
+  </div>
+  <p class="p-container">
+    <input type="submit" name="go" id="go" value="Add it, Man">
+  </p>
+
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Distance</th>
+      <th>Time</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <!-- this is where data will be appended -->
+  <tbody>
+    <tr>
+      <td><strong>Rock Creek Ride</strong></td>
+      <td>15 miles</td>
+      <td>90 min</td>
+      <td>Sample texty</td>
+    </tr>
+    <tr>
+      <td><strong>Rock Creek Ride</strong></td>
+      <td>20 miles </td>
+      <td>160 min</td>
+      <td>Sample texty</td>
+    </tr>
+    <tr>
+      <td><strong>Rock Creek Ride</strong></td>
+      <td>10 miles</td>
+      <td>45 min</td>
+      <td>Sample texty</td>
+    </tr>
+    <tr>
+      <td><strong>Rock Creek Ride</strong></td>
+      <td>18 miles</td>
+      <td>80 min</td>
+      <td>Sample texty</td>
+    </tr>
+    <tr>
+      <td><strong>Rock Creek Ride</strong></td>
+      <td>15 miles</td>
+      <td>120 min</td>
+      <td>Sample texty</td>
+    </tr>
+    <tr>
+      <td><strong>Rock Creek Ride</strong></td>
+      <td>15</td>
+      <td>The speed of the show/reveal</td>
+      <td>Sample texty</td>
+    </tr>
+  </tbody>
+</table>
+<%= yield =%>
+
+
+</body>
+</html>
