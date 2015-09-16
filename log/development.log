@@ -19427,3 +19427,174 @@ Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab813
 
 
 Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=[FILTERED]&go=Add+it%2C+Man" for ::1 at 2015-09-16 17:47:16 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 121.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/application.self-00cc1e2268af2cd0ed7a3ec3dcbe73bfdc92a6cc5414b1a487136954317e7dc9.css?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/map.self-21059161fd5c32df0dd83787f8e0250bd8e0a3045d6863aa92bd37b775e6decc.css?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/application.self-61c3afb1f81bdc56c0cd769023003e4a11dad1664f48d3ca8c65b73d32d90da7.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab81319db0a8fbbd6d35dd248805b.js?body=1" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:47:16 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=[FILTERED]&go=Add+it%2C+Man" for ::1 at 2015-09-16 17:47:42 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-00cc1e2268af2cd0ed7a3ec3dcbe73bfdc92a6cc5414b1a487136954317e7dc9.css?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/map.self-21059161fd5c32df0dd83787f8e0250bd8e0a3045d6863aa92bd37b775e6decc.css?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/application.self-61c3afb1f81bdc56c0cd769023003e4a11dad1664f48d3ca8c65b73d32d90da7.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab81319db0a8fbbd6d35dd248805b.js?body=1" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:47:42 -0400
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-16 17:47:44 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r6BuZVZqLnUNgAeemPZnjVP2SNYZdRJIvly50AzePud++9/gFzw6fRn0DmIm6s3sKP48SbuVUc2Pw0mKneU1jQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:47:44 -0400
+Processing by ApplicationController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-16 17:47:44 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 124ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-16 17:47:47 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/map.self-21059161fd5c32df0dd83787f8e0250bd8e0a3045d6863aa92bd37b775e6decc.css?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/application.self-00cc1e2268af2cd0ed7a3ec3dcbe73bfdc92a6cc5414b1a487136954317e7dc9.css?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/application.self-61c3afb1f81bdc56c0cd769023003e4a11dad1664f48d3ca8c65b73d32d90da7.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab81319db0a8fbbd6d35dd248805b.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:47:47 -0400
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-16 17:49:18 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t2pXa927bOMjX+0998+4vYBUJJ2bIyagee386CXuy1k/rWr55Md236JSp2b5vzoZVFp00AeXKwy1e8a1f8xmow==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t2pXa927bOMjX+0998+4vYBUJJ2bIyagee386CXuy1k/rWr55Md236JSp2b5vzoZVFp00AeXKwy1e8a1f8xmow==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-16 17:49:22 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.0ms)
