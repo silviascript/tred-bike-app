@@ -89,7 +89,6 @@ body {
   padding: 7px 9px;
 }
 /*new ride styles*/
-@import "compass/css3";
 
 * { box-sizing: border-box; }
 
@@ -97,7 +96,7 @@ body {
 	/*font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;*/
   color:white;
   font-size:12px;
-  background:#39CCCC;
+  background:#FFFF99;
 }
 
 form {

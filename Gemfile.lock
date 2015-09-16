@@ -178,7 +178,6 @@ DEPENDENCIES
   pg
   rails (= 4.2.4)
   rails-backbone
-  sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
   turbolinks

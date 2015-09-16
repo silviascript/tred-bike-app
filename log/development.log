@@ -19294,3 +19294,136 @@ Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab813
 
 
 Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:17:40 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=[FILTERED]&go=Add+it%2C+Man" for ::1 at 2015-09-16 17:37:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 1012ms (Views: 950.9ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/application.self-e75420ad320c09adae200001d014c54bb52416f48e6004a6e78f9e03107dc2b7.css?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/map.self-21059161fd5c32df0dd83787f8e0250bd8e0a3045d6863aa92bd37b775e6decc.css?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/application.self-61c3afb1f81bdc56c0cd769023003e4a11dad1664f48d3ca8c65b73d32d90da7.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab81319db0a8fbbd6d35dd248805b.js?body=1" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:37:23 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=[FILTERED]&go=Add+it%2C+Man" for ::1 at 2015-09-16 17:37:53 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 116ms (Views: 113.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-a115e32b7c393495f6110e3270f38da97676b76f3e22afd03d11bbc519500acb.css?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/map.self-21059161fd5c32df0dd83787f8e0250bd8e0a3045d6863aa92bd37b775e6decc.css?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/application.self-61c3afb1f81bdc56c0cd769023003e4a11dad1664f48d3ca8c65b73d32d90da7.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab81319db0a8fbbd6d35dd248805b.js?body=1" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:37:53 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=[FILTERED]&go=Add+it%2C+Man" for ::1 at 2015-09-16 17:39:17 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered text template within layouts/application (0.1ms)
+Completed 200 OK in 126ms (Views: 123.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-9bb422b45a4aa76bb897675781934f9abc8112bd2fd109b723814fc423ed0a4e.css?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/map.self-21059161fd5c32df0dd83787f8e0250bd8e0a3045d6863aa92bd37b775e6decc.css?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/application.self-61c3afb1f81bdc56c0cd769023003e4a11dad1664f48d3ca8c65b73d32d90da7.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/backbone/ride.self-951c8fa69209e340537e4fcbd750e1a6b67ab81319db0a8fbbd6d35dd248805b.js?body=1" for ::1 at 2015-09-16 17:39:17 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-16 17:39:17 -0400
