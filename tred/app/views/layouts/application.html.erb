@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
   <title>Tred</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= yield =%>
+  <header id="page-header">
+    <span class="logo">Tred Tracker</span>
+    <ul class="nav">
+      <li><a href="#">Sign In</a></li>
+      <li><a href="#">My Rides</a></li>
+      <li><a href="#songs/new">Add a ride</a></li>
+    </ul>
+  </header>
 
-<%= yield %>
+  <div id='map' class='dark'></div>
+
+  <!-- everything in here can be written out, and then accessed or de-accesse with backbone -->
 
 </body>
 </html>

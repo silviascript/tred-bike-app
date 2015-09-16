@@ -17,21 +17,12 @@
 //= require backbone
 //= require handlebars.runtime
 //= require_self
-//= require_tree ./backbone/routers
-//= require_tree ./backbone/models
-//= require_tree ./backbone/collections
-//= require_tree ./backbone/views
+//= require mapbox.js
 //= require_tree .
-App = {
-  Models: {},
-  Views: {},
-  Collections: {},
-  Routers: {}
-};
 
-function loadApp(){
-  App.router = new App.Router();
-  Backbone.history.start();
-}
+$(document).ready(function() {
+  L.mapbox.accessToken = 'pk.eyJ1IjoiY2xvdmV0dCIsImEiOiJjaWVtejlzbzcwM3VhczJtMm04d214N3lpIn0.-sC2G_jfDWbhZFY-LraCTw';
+  var map = L.mapbox.map('map', 'clovett.ciemz9sg603sbssm2g0v6fm03').setView([40, -74.50], 9);
 
-$(document).ready(loadApp);
+  
+});
