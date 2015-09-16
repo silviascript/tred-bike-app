@@ -3,25 +3,38 @@
 <head>
   <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <title>Tred</title>
-<%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= yield =%>
   <header id="page-header">
     <span class="logo">Tred Tracker</span>
     <ul class="nav">
-      <li><a href="#">Sign In</a></li>
       <li><a href="#">My Rides</a></li>
       <li><a href="#songs/new">Add a ride</a></li>
     </ul>
   </header>
 
+  <div class="container-narrow">
+    <div class="masthead">
+      <ul class="nav nav-pills pull-right">
+        <% if user_signed_in? %>
+          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  
   <div id='map' class='dark'></div>
 
-  <!-- everything in here can be written out, and then accessed or de-accesse with backbone -->
+<%= yield =%>
+
 
 </body>
 </html>
