@@ -10,29 +10,64 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header id="page-header">
-    <span class="logo">Tred Tracker</span>
-    <ul class="nav">
-      <li><a href="#">My Rides</a></li>
-      <li><a href="#songs/new">Add a ride</a></li>
-    </ul>
-  </header>
-
-  <div class="container-narrow">
-    <div class="masthead">
-      <ul class="nav nav-pills pull-right">
-        <% if user_signed_in? %>
-          <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-        <% else %>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
-          <li><%= link_to "Sign up", new_user_registration_path %></li>
-        <% end %>
+<section id="new ride">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <header id="page-header">
+      <span class="logo">Tred Tracker</span>
+      <ul class="nav">
+        <li><a href="#">My Rides</a></li>
+        <li><a href="#songs/new">Add a ride</a></li>
       </ul>
+    </header>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container-narrow">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <% if user_signed_in? %>
+            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to "Sign in", new_user_session_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
-  </div>
-  
+  </nav>
   <div id='map' class='dark'></div>
 
+</section>
+<!-- new ride -->
+<form>
+  <h1>ADD A NEW RIDE</h1>
+  <div class="inset">
+  <p>
+    <label for="email">Start Point</label>
+    <input type="text" name="email" id="email">
+  </p>
+  <p>
+    <label for="password">End Point</label>
+    <input type="text" name="password" id="password">
+  </p>
+  <p>
+    <label for="password">Distance</label>
+    <input type="text" name="password" id="distance">
+  </p>
+  <p>
+    <label for="password">Time</label>
+    <input type="text" name="password" id="time">
+  </p>
+  <p>
+    <label for="password">Notes</label>
+    <input type="text" name="password" id="notes">
+  </p>
+
+  </div>
+  <p class="p-container">
+    <input type="submit" name="go" id="go" value="Add it, Man">
+  </p>
+
+</form>
 <%= yield =%>
 
 

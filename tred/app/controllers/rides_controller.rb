@@ -3,6 +3,25 @@ class RidesController < ApplicationController
   def index
     @rides = Ride.all
     render layout: 'application', text: ''
+
+    @geojson = Array.new
+    # mapbox functionality to be revised and implemented at a later time. beepbop.
+    # @rides.each do |ride|
+    # @geojson << {
+    #   type: 'Feature',
+    #   geometry: {
+    #     type: 'Point',
+    #     coordinates: [ride.longitude, ride.latitude]
+    #   },
+    #   properties: {
+    #     title: ride.title,
+    #     address: ride.street,
+    #     :'marker-color' => '#00607d',
+    #     :'marker-symbol' => 'circle',
+    #     :'marker-size' => 'medium'
+    #   }
+    # }
+    # end
   end
 
   def show

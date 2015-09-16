@@ -23,6 +23,7 @@
 $(document).ready(function() {
   L.mapbox.accessToken = 'pk.eyJ1IjoiY2xvdmV0dCIsImEiOiJjaWVtejlzbzcwM3VhczJtMm04d214N3lpIn0.-sC2G_jfDWbhZFY-LraCTw';
   var map = L.mapbox.map('map', 'clovett.ciemz9sg603sbssm2g0v6fm03').setView([40, -74.50], 9);
+  var markerLayer = L.mapbox.featureLayer().addTo(map);
 
 
 });
