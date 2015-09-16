@@ -4,6 +4,7 @@
   <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
   <title>Tred</title>
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -43,23 +44,23 @@
   <div class="inset">
   <p>
     <label for="email">Start Point</label>
-    <input type="text" name="email" id="email">
+    <input type="text" placeholder="Where'd you start your ride?"name="email" id="email">
   </p>
   <p>
     <label for="password">End Point</label>
-    <input type="text" name="password" id="password">
+    <input type="text" placeholder="...And where'd you ride to?"name="password" id="password">
   </p>
   <p>
     <label for="password">Distance</label>
-    <input type="text" name="password" id="distance">
+    <input type="text" placeholder="We'll fill this in for you"name="password" id="distance">
   </p>
   <p>
     <label for="password">Time</label>
-    <input type="text" name="password" id="time">
+    <input type="text" placeholder="How long was your ride?"name="password" id="time">
   </p>
   <p>
     <label for="password">Notes</label>
-    <input type="text" name="password" id="notes">
+    <input type="text" placeholder="Leave yourself some notes about the ride"name="password" id="notes">
   </p>
 
   </div>
@@ -78,6 +79,7 @@
       <th>Notes</th>
     </tr>
   </thead>
+  <!-- this is where data will be appended -->
   <tbody>
     <tr>
       <td><strong>Rock Creek Ride</strong></td>
