@@ -17,6 +17,23 @@
 //= require backbone
 //= require handlebars.runtime
 //= require_self
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/tred
+//= require_tree ./backbone/models
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/tred
+//= require_tree ./backbone/collections
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/tred
 //= require_tree .
 
 
@@ -25,5 +42,12 @@ $(document).ready(function() {
   var map = L.mapbox.map('map', 'clovett.ciemz9sg603sbssm2g0v6fm03').setView([40, -74.50], 9);
   var markerLayer = L.mapbox.featureLayer().addTo(map);
 
+  console.log("locked and loaded muther f***ers")
 
 });
+
+window.App = {
+  Models: {},
+  Collections: {},
+  Views: {}
+}
