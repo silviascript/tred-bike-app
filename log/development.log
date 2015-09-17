@@ -56,3 +56,169 @@ ORDER BY c.conname
   [1m[35m (0.2ms)[0m  BEGIN
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "feeltheburn@gmail.com"]]
   [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "rocksolid@gmail.com"]]
+  [1m[35m (16.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email") VALUES ($1) RETURNING "id"  [["email", "flex200@aol.com"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = $1[0m  [["email", "rocksolid@gmail.com"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "rocksolid@gmail.com"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email") VALUES ($1) RETURNING "id"  [["email", "flex200@aol.com"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-09-17 15:05:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 2276ms (Views: 2263.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:05:39 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-3765ebe9f8e52782264223504f90f1b85fd774ea6fa17b9f3c1177ddf1624ee9.js?body=1" for ::1 at 2015-09-17 15:05:40 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:05:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "rocksolid@gmail.com"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email") VALUES ($1) RETURNING "id"  [["email", "flex200@aol.com"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"  [["title", "test"], ["user_id", 10]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mSQL (1.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (9.5ms)[0m  CREATE TABLE "rides" ("id" serial primary key, "title" character varying, "user_id" integer) 
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX  "index_rides_on_user_id" ON "rides" USING btree ("user_id")[0m
+  [1m[35m (5.1ms)[0m  CREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "email" character varying) 
+  [1m[36m (3.5ms)[0m  [1mALTER TABLE "rides" ADD CONSTRAINT "fk_rails_922df144cd"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (3.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150917185008')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150917184755')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150917184806')[0m
+  [1m[35mSQL (0.7ms)[0m  CREATE EXTENSION IF NOT EXISTS "plpgsql"
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "rides" ("id" serial primary key, "title" character varying, "user_id" integer) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_rides_on_user_id" ON "rides" USING btree ("user_id")
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "email" character varying) [0m
+  [1m[35m (4.6ms)[0m  ALTER TABLE "rides" ADD CONSTRAINT "fk_rails_922df144cd"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150917185008')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150917184755')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150917184806')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "rocksolid@gmail.com"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email") VALUES ($1) RETURNING "id"  [["email", "flex200@aol.com"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"  [["title", "test"], ["user_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Rock creek ride"], ["user_id", 1]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"  [["title", "Capital Crescent Trail"], ["user_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Mount Vernon Trail"], ["user_id", 3]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "rocksolid@gmail.com"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email") VALUES ($1) RETURNING "id"  [["email", "flex200@aol.com"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email") VALUES ($1) RETURNING "id"[0m  [["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"  [["title", "test"], ["user_id", 4]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Rock creek ride"], ["user_id", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"  [["title", "Capital Crescent Trail"], ["user_id", 5]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Mount Vernon Trail"], ["user_id", 6]]
+  [1m[35m (0.3ms)[0m  COMMIT
