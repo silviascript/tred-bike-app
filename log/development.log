@@ -23493,3 +23493,114 @@ ORDER BY c.conname
   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
   [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rocksolid@gmail.com' LIMIT 1
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+
+
+Started GET "/" for ::1 at 2015-09-17 14:30:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 671ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x007fd0ee922d88>:0x007fd0ee921cd0>):
+    14:   <div>
+    15:   <nav id="nav">
+    16:     <ul id="nav-items">
+    17:       <% if user_signed_in? %>
+    18:         <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+    19:         <li id="account-info"><a href="#"> | My Account</a></li>
+    20:       <% else %>
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___375992019742100059_70267666057600'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (159.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 14:31:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:115: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/layouts/application.html.erb:115: syntax error, unexpected keyword_ensure, expecting end-of-input
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (137.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 14:32:07 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 578ms (Views: 577.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-3765ebe9f8e52782264223504f90f1b85fd774ea6fa17b9f3c1177ddf1624ee9.js?body=1" for ::1 at 2015-09-17 14:32:08 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 14:32:09 -0400
