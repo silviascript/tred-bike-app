@@ -12,6 +12,6 @@
 #
 users = User.create([{email: 'rocksolid@gmail.com'}, {email: 'flex200@aol.com'}, {email: 'feeltheburn@gmail.com'}])
 
-User.where(email: 'rocksolid@gmail.com').rides.create({title: 'Rock creek ride'});
-User.where(email: 'flex200@aol.com').rides.create({title: 'Capital Crescent Trail'});
-User.where(email: 'feeltheburn@gmail.com').rides.create({title: 'Mount Vernon Trail'});
+# User.where(email: 'rocksolid@gmail.com').rides.create({title: 'Rock creek ride'});
+# User.where(email: 'flex200@aol.com').rides.create({title: 'Capital Crescent Trail'});
+# User.where(email: 'feeltheburn@gmail.com').rides.create({title: 'Mount Vernon Trail'});
