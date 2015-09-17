@@ -11,31 +11,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<section id="new ride">
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <header id="page-header">
-      <span class="logo">Tred Tracker</span>
-      <ul class="nav">
-        <li><a href="#">My Rides</a></li>
-        <li><a href="#songs/new">Add a ride</a></li>
-      </ul>
-    </header>
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container-narrow">
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <% if user_signed_in? %>
-            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-          <% else %>
-            <li><%= link_to "Sign in", new_user_session_path %></li>
-            <li><%= link_to "Sign up", new_user_registration_path %></li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
+  <div>
+  <nav id="nav">
+    <ul id="nav-items">
+      <% if user_signed_in? %>
+        <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+        <li id="account-info"><a href="#"> | My Account</a></li>
+      <% else %>
+        <li><%= link_to "Sign in", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      <% end %>
+    </ul>
   </nav>
-  <div id='map' class='dark'></div>
+</div>
+
+<div id='map' class='dark'></div>
 
 </section>
 <!-- new ride -->

@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 
 gem 'devise'
 
+gem 'bcrypt-ruby'
+
 gem "bootstrap-sass-rails", "~> 2.2.2.0"
+
 gem "rails-backbone"
 
 gem 'handlebars_assets'

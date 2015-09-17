@@ -12,7 +12,7 @@
  *= require_self
  *= require_tree .
  */
-
+/**= require mapbox */
 
 html {
    position: relative;
@@ -21,48 +21,68 @@ html {
 }
 
 body {
-   position: relative;
+   /*position: relative;*/
    color: #555;
    font-family: 'Lato', 'Arial', sans-serif;
    height: 100%;
 }
 
+div#map {
+  position: absolute;
+  top: 16%;
+  bottom: 0;
+  left: 20px;
+  width: 550px;
+  height: 550px;
+  border: 3pt black;
+  margin: 1pt;
+}
+
+
  #page-header {
    border-bottom: 1px solid gray;
  }
-
-.logo {
-   font-size: 22pt;
-   float: right;
-   color: grey;
-   font-weight: 500;
-}
-
-.nav {
-   float: left;
+ /*NAV STYLE*/
+ #nav {
+   position: fixed;
+   width: 100%;
+   height: 20px;
+   background-color: #fff;
+   color: black;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   opacity: 1;
+   margin-top: 0;
+ }
+ #nav-items {
    list-style-type: none;
-}
-
-.nav li {
-   display: inline-block;
-   margin: 5px;
-   border: 1px solid black;
-}
-
-.nav a {
    float: right;
-   width: 100px;
-   text-decoration: none;
-   background-color: white;
-   /*padding: 0.2em 0.6em;*/
-   text-align: center;
-}
+   margin-right: 3%;
+   padding: 14px 4px;
+   background-color: #fff;
+   font-family: 'Armata', sans-serif;
+   font-size: 1.3em;
+   text-transform: uppercase;
+   display: flex;
+   opacity: .9;
+ }
 
-.nav a:hover {
-   background-color: #eeeeee;
-}
+ ul{
+   list-style-type: none;
+ }
+
+ a, a:visited {
+   color: inherit;
+   text-decoration: none;
+   cursor: auto;
+   padding: 2px;
+ }
 
 /* User sign in and sign forms. */
+/*.new-user {
+  height: 200px;
+}
 .border-form-div {
   max-width: 300px;
   padding: 19px 29px 29px;
@@ -87,7 +107,8 @@ body {
   height: auto;
   margin-bottom: 15px;
   padding: 7px 9px;
-}
+}*/
+
 /*new ride styles*/
 
 * { box-sizing: border-box; }
@@ -101,13 +122,15 @@ body {
 
 form {
  	background:linear-gradient(#777, #444);
-  width:400px;
+  width:380px;
+  height: 575px;
   margin-left: 55%;
   border-radius:0.4em;
   border:2px solid #777;
   overflow:hidden;
   position:relative;
   box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  margin-top: 10%;
 }
 
 form:after {
@@ -121,7 +144,7 @@ form:after {
   top:0;
 }
 
-form:before {
+/*form:before {
  	content:"";
   display:block;
   position:absolute;
@@ -131,7 +154,7 @@ form:before {
   left:34%;
   top:-7px;
   box-shadow: 0 0 6px 4px #fff;
-}
+}*/
 
 .inset {
  	padding:5px;
