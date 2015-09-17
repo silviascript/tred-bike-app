@@ -222,3 +222,1127 @@ FOREIGN KEY ("user_id")
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("title", "user_id") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Mount Vernon Trail"], ["user_id", 6]]
   [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2015-09-17 15:21:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 596ms (Views: 584.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-3765ebe9f8e52782264223504f90f1b85fd774ea6fa17b9f3c1177ddf1624ee9.js?body=1" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:21:45 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 15:25:03 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 104ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-3765ebe9f8e52782264223504f90f1b85fd774ea6fa17b9f3c1177ddf1624ee9.js?body=1" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:25:03 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 15:25:52 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-3765ebe9f8e52782264223504f90f1b85fd774ea6fa17b9f3c1177ddf1624ee9.js?body=1" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:25:52 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 15:26:25 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-3765ebe9f8e52782264223504f90f1b85fd774ea6fa17b9f3c1177ddf1624ee9.js?body=1" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:26:26 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 15:34:18 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 348ms (Views: 347.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:34:19 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 15:35:45 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 118ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 15:35:45 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 15:35:45 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 15:35:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 15:35:45 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-3d0f6a5412196b5d1245e212048d26fe15e5b093ef4495292c5c0d57ab7ecaa7.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 15:35:46 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 16:03:18 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 682ms (Views: 681.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone/templates/ride.self-cf8df8f124dfcf297b578a7fafff134b7c0a382c59c6b822117c6b0ff97ad1d4.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-d667d27371f970a4802654c5eb8c92e06e6a9681118f2525efd04930ce1a09ac.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:03:19 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:03:27 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 16:03:51 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 365ms (Views: 364.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-33acee549fd2e255499bd3bc667c736dc3ec3739a07cbae1798ae492e8558218.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone/templates/ride.self-cf8df8f124dfcf297b578a7fafff134b7c0a382c59c6b822117c6b0ff97ad1d4.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:03:51 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:03:54 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 16:04:05 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 356ms (Views: 355.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-118727078baa7fa72ae93afd0f427b60b713717d87904ad71454ca580ebf86fb.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone/templates/ride.self-cf8df8f124dfcf297b578a7fafff134b7c0a382c59c6b822117c6b0ff97ad1d4.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:04:06 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:04:07 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 16:04:25 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 355ms (Views: 354.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/backbone/views/ride.self-df7cb37c1afa1ff02729dc660bd8d1dbc2cea7828687cac43d516c234eccfd2c.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone/templates/ride.self-cf8df8f124dfcf297b578a7fafff134b7c0a382c59c6b822117c6b0ff97ad1d4.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:04:25 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:04:29 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 16:05:16 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 343ms (Views: 342.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone/templates/ride.self-cf8df8f124dfcf297b578a7fafff134b7c0a382c59c6b822117c6b0ff97ad1d4.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-2c85811d04327647d10526664a51835f823b87cbb212840d98b7017fd2c17b60.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:05:16 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:06:20 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 16:06:37 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 136ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:06:37 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:06:38 -0400
+
+
+Started GET "/assets/backbone/templates/ride.self-cf8df8f124dfcf297b578a7fafff134b7c0a382c59c6b822117c6b0ff97ad1d4.js?body=1" for ::1 at 2015-09-17 16:06:38 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:06:38 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-2c85811d04327647d10526664a51835f823b87cbb212840d98b7017fd2c17b60.js?body=1" for ::1 at 2015-09-17 16:06:38 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:06:38 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:06:38 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:15:28 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 718ms (Views: 717.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/backbone/templates/ride.self-799dc00da9b9fa00d7807f270dc83936b633e3baca94d7b0b9b5491292bc41fa.js?body=1" for ::1 at 2015-09-17 16:15:30 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:19:15 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 137ms (Views: 136.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:41:07 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 400ms (Views: 398.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/backbone/views/ride.self-ec24867efc0f558852b774542fa016605954c18abfeb0276e6dac97b085e4a9e.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:41:07 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:41:08 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:41:08 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:41:08 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:41:20 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 385ms (Views: 384.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-0e2ed3b08cd2f87a299d48cb538cb186d19cfd75285bcc8e24f4bb60e983af67.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:41:21 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:41:50 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 398ms (Views: 397.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:41:50 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-7b79f2c2f97753a725f73439dacf030c475660d33811983a5322127e13e4d509.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:41:51 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:42:03 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 382ms (Views: 381.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:42:03 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:42:03 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:42:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:42:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:42:03 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-95a45c2afbdd3f20da4f0c65180789f09b4f26b724dc7016fa883553c8e877c1.js?body=1" for ::1 at 2015-09-17 16:42:03 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/application.self-b2a531d775d7b312f392492cb6a7c32d727c56a162ac207b40a9a941a56d60c9.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:42:04 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:42:50 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 314ms (Views: 313.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-95a45c2afbdd3f20da4f0c65180789f09b4f26b724dc7016fa883553c8e877c1.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:42:50 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:42:51 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:43:55 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 341ms (Views: 340.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-d2b5faf213116cc8227496641d1adb6047d1710c4b2adfe7ed010cadf433e38e.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:43:55 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:43:56 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:43:56 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:43:56 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:43:56 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:44:11 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-d2b5faf213116cc8227496641d1adb6047d1710c4b2adfe7ed010cadf433e38e.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:44:11 -0400
+
+
+Started GET "/?email=&password=&password=&password=&password=&go=Add+it%2C+Man" for ::1 at 2015-09-17 16:44:21 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "go"=>"Add it, Man"}
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 126ms (Views: 125.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-d2b5faf213116cc8227496641d1adb6047d1710c4b2adfe7ed010cadf433e38e.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-17 16:44:21 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-17 16:44:21 -0400

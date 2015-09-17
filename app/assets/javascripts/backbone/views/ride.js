@@ -1,14 +1,31 @@
 App.Views.Ride = Backbone.View.extend({
-  tagName: 'li',
+  className: 'rideform',
+  tagName: 'tbody',
 
-  template: _.template("<%= title %>"),
-  initialize: function() {
-    return this.model = new App.Models.Ride({
-      title: 'C&O Canal Trip'
-    });
+  events: {
+    'click .id': 'createRide'
   },
-  render: function() {
-    this.$el.html(this.template(this.model.attributes));
-    return this;
+
+  // initialize: function() {
+  //   this.listenTo(this.model, 'change', this.render);
+  //   this.template = HandlebarsTemplates['ride'];
+  //   this.render();
+  // },
+  createRide: function() {
+    var data = {
+      start: this.$("#start").val(),
+      end: this.$("#end").val(),
+      distance: this.$("#distance").val(),
+      time: this.$("#time").val(),
+      title: this.$("#title").val(),
+    }
+    this.model.rides.create(data)
+    console.log("create data works")
+  },
+
+  render: function(){
+    var renderedHTML = this.template(this.model.toJSON());
+
   }
+
 })

@@ -27,13 +27,14 @@
 <form>
   <h1>Add a new ride</h1>
   <div class="inset">
+  <form id="rideform">
   <p>
     <label for="email">Start Point</label>
-    <input type="text" placeholder="Where'd you start your ride?"name="email" id="email">
+    <input type="text" placeholder="Where'd you start your ride?"name="email" id="start">
   </p>
   <p>
     <label for="password">End Point</label>
-    <input type="text" placeholder="...And where'd you ride to?"name="password" id="password">
+    <input type="text" placeholder="...And where'd you ride to?"name="password" id="end">
   </p>
   <p>
     <label for="password">Distance</label>
@@ -44,10 +45,10 @@
     <input type="text" placeholder="How long was your ride?"name="password" id="time">
   </p>
   <p>
-    <label for="password">Notes</label>
-    <input type="text" placeholder="Leave yourself some notes about the ride"name="password" id="notes">
+    <label for="password">Title</label>
+    <input type="text" placeholder="Name your trip"name="password" id="title">
   </p>
-
+</form>
   </div>
   <p class="p-container">
     <input type="submit" name="go" id="go" value="Add it, Man">
@@ -57,7 +58,7 @@
 
 <table>
   <thead>
-    <tr id="ridetable">
+    <tr>
       <th>Title</th>
       <th>Distance</th>
       <th>Time</th>
@@ -66,7 +67,7 @@
   </thead>
   <!-- this is where data will be appended -->
   <tbody>
-    <tr>
+    <tr class="ridetable">
       <td><strong>Rock Creek Ride</strong></td>
       <td>15 miles</td>
       <td>90 min</td>
@@ -98,10 +99,11 @@
     </tr>
     <tr>
       <td><strong>Rock Creek Ride</strong></td>
-      <td>15</td>
+      <td >15</td>
       <td>The speed of the show/reveal</td>
       <td>Sample texty</td>
     </tr>
+    <tr></tr>
   </tbody>
 </table>
 <%= yield =%>
