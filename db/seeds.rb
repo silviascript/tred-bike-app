@@ -5,13 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-# 
+#
 # rocksolid = User.create(email: 'rocksolid@gmail.com');
 # rocksolid.rides.create(title: 'Rock creek ride');
 
 #
-# users = User.create([{email: 'rocksolid@gmail.com'}, {email: 'flex200@aol.com'}, {email: 'feeltheburn@gmail.com'}])
-#
-# User.where(email: 'rocksolid@gmail.com').rides.create({title: 'Rock creek ride'});
-# User.where(email: 'flex200@aol.com').rides.create({title: 'Capital Crescent Trail'});
-# User.where(email: 'feeltheburn@gmail.com').rides.create({title: 'Mount Vernon Trail'});
+users = User.create([{email: 'rocksolid@gmail.com'}, {email: 'flex200@aol.com'}, {email: 'feeltheburn@gmail.com'}])
+
+User.where(email: 'rocksolid@gmail.com').rides.create({title: 'Rock creek ride'});
+User.where(email: 'flex200@aol.com').rides.create({title: 'Capital Crescent Trail'});
+User.where(email: 'feeltheburn@gmail.com').rides.create({title: 'Mount Vernon Trail'});
