@@ -1,15 +1,16 @@
 App.Views.Ride = Backbone.View.extend({
   el: '#ridetable',
-  // className: 'rideform',
+  className: 'rideform',
+
+
+  intialize: function() {
+    // this.render();
+    this.listenTo(this.model, 'change', this.render);
+    console.log("initialized")
+  },
 
   events: {
     'click .submit': 'createRide'
-  },
-
-  intialize: function() {
-    this.render();
-    this.listenTo(this.model, 'change', this.render);
-    console.log("initialized")
   },
 
   createRide: function() {
@@ -26,10 +27,9 @@ App.Views.Ride = Backbone.View.extend({
   },
 
   render: function(){
-    this.$el.html("hello world")
     event.preventDefault();
     var newRide = new App.Views.Ride({model: ride});
-    this.$el.find(".tbody").append(newRide.$el);
+    ('#ridetable').append(newRide.render().$el);
       console.log("render works")
   }
 

@@ -10,7 +10,12 @@
 # rocksolid.rides.create(title: 'Rock creek ride');
 
 #
-users = User.create([{email: 'rocksolid@gmail.com'}, {email: 'flex200@aol.com'}, {email: 'feeltheburn@gmail.com'}])
+users = User.create([{first_name: "Christine", last_name: "Lovett", email: 'rocksolid@gmail.com'}, {first_name: "Thomas", last_name: "Lovett", email: 'flex200@aol.com'}, {first_name: "Pat", last_name: "Lovett", email: 'feeltheburn@gmail.com'}])
 
 Ride.create({title: "test", user_id: users[0].id})
-rides = Ride.create([{title: 'Rock creek ride', user_id: users[0].id}, {title: "Capital Crescent Trail", user_id: users[1].id}, {title: "Mount Vernon Trail", user_id: users[2].id}])
+rides = Ride.create([
+        {start: "washington", end: "alexandria", distance: 20, time: 70, title: 'Rock creek ride', user_id: users[0].id},
+        {start: "washington", end: "bethesda", distance: 20, time: 70, title: 'Rock creek ride', user_id: users[1].id},
+        {start: "baltimore", end: "falls church", distance: 20, time: 70, title: 'Rock creek ride', user_id: users[1].id},
+        {start: "washington", end: "baltimore", distance: 80, time: 70, title: 'Rock creek ride', user_id: users[0].id},
+        {start: "alexandria", end: "falls church", distance: 20, time: 70, title: 'Rock creek ride', user_id: users[2].id}])

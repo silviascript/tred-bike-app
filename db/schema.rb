@@ -17,6 +17,10 @@ ActiveRecord::Schema.define(version: 20150917185008) do
   enable_extension "plpgsql"
 
   create_table "rides", force: :cascade do |t|
+    t.string  "start"
+    t.string  "end"
+    t.integer "distance"
+    t.integer "time"
     t.string  "title"
     t.integer "user_id"
   end
