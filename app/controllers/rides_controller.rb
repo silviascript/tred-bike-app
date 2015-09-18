@@ -1,11 +1,11 @@
 class RidesController < ApplicationController
 
   def index
-    @rides = Ride.all
+    @rides = current_user.rides
   end
   #
   # def show
-  #   @ride = Ride.find(params[:id])
+  #   @ride = current_user.rides.find(params[:id])
   #   render status: 200, json: @ride.to_json
   # end
   #
