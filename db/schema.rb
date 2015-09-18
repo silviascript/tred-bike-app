@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150917185008) do
     t.integer "distance"
     t.integer "time"
     t.string  "title"
+    t.string  "notes"
     t.integer "user_id"
   end
 

@@ -1,8 +1,7 @@
 class RidesController < ApplicationController
 
   def index
-    @rides = Ride.where(user_id: params[:user_id])
-    respond_with(@rides)
+    @rides = Ride.all
   end
   #
   # def show
@@ -31,9 +30,9 @@ class RidesController < ApplicationController
   #   end
   # end
 
-  private
-  def ride_params
-    params.require(:ride).permit(:title)
-  end
+  # private
+  # def ride_params
+  #   params.require(:ride).permit(:title)
+  # end
 
 end

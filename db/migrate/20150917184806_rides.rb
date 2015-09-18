@@ -6,6 +6,7 @@ class Rides < ActiveRecord::Migration
       t.integer :distance
       t.integer :time
       t.string :title
+      t.string :notes
     end
   end
 end

@@ -22,8 +22,8 @@
 
 <div id='map' class='dark'></div>
 
-</section>
 <!-- new ride -->
+<div id ="ride">
 <form id="rideform">
   <h1>Add a new ride</h1>
   <div class="inset">
@@ -58,34 +58,28 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Start</th>
+      <th>End</th>
       <th>Distance</th>
       <th>Time</th>
       <th>Notes</th>
     </tr>
   </thead>
-  <!-- this is where data will be appended -->
   <tbody>
-    <tr class="ridetable">
-      <td><strong>Rock Creek Ride</strong></td>
-      <td>15 miles</td>
-      <td>90 min</td>
-      <td>Sample text</td>
-    </tr>
-    <tr>
-      <td><strong>Rock Creek Ride</strong></td>
-      <td>20 miles </td>
-      <td>160 min</td>
-      <td>Sample text</td>
-    </tr>
-    <tr>
-      <td><strong>Rock Creek Ride</strong></td>
-      <td>10 miles</td>
-      <td>45 min</td>
-      <td>Sample text</td>
-    </tr>
-    <tr></tr>
-  </tbody>
+    <% @rides.each do |ride| %>
+        <tr>
+          <td><%= ride.title %></td>
+          <td><%= ride.start %></td>
+          <td><%= ride.end %></td>
+          <td><%= ride.distance %></td>
+          <td><%= ride.time %></td>
+          <td><%= ride.notes %></td>
+        </tr>
+    <% end %>
+    <!-- <tr class="ridetable"> -->
 </table>
+
+</div>
 <%= yield =%>
 
 

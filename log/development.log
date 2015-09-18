@@ -2597,3 +2597,1231 @@ ORDER BY c.conname
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("start", "end", "distance", "time", "title", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["start", "alexandria"], ["end", "falls church"], ["distance", 20], ["time", 70], ["title", "Rock creek ride"], ["user_id", 3]]
   [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2015-09-18 11:03:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:69: syntax error, unexpected '>'
+..._buffer.append=( ride.title %=></strong></td>
+...                               ^
+/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:69: unknown regexp options - td
+/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:70: syntax error, unexpected '<'
+      <td><%= ride.start );@output_buffer.safe_append='</td>
+       ^
+/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:75: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:85: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/christinelovett/wdi/projects/Tred/app/views/layouts/application.html.erb:87: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/application.html.erb:69: syntax error, unexpected '>'
+  app/views/layouts/application.html.erb:69: unknown regexp options - td
+  app/views/layouts/application.html.erb:70: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:75: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:85: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/application.html.erb:87: syntax error, unexpected keyword_end, expecting ')'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:04:30 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 596ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___290719368701059966_70148528483480'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (126.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:06:07 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___290719368701059966_70148528483480'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (134.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:06:15 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___290719368701059966_70148528483480'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:07:01 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___290719368701059966_70148528483480'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (128.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:07:56 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___290719368701059966_70148528483480'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (134.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:08:15 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___290719368701059966_70148528483480'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (136.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:09:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 593ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (144.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:18:29 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (129.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:18:45 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (135.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:19:26 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:20:22 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:20:24 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (137.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:20:25 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (128.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:20:33 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (126.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:21:41 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:21:55 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:22:11 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:22:53 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.8ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (131.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:23:10 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:23:26 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130347810080'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:23:52 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67: <!-- <% @rides.each do |ride| %>
+    68:     <tr>
+    69:       <td><%= ride.title %></td>
+    70:       <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130382477620'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.1ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:24:01 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 111ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:24:02 -0400
+
+
+Started GET "/" for ::1 at 2015-09-18 11:24:10 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64:     </tr>
+    65:   </thead>
+    66:   <tbody>
+    67:     <% @rides.each do |ride| %>
+    68:         <tr>
+    69:           <td><%= ride.title %></td>
+    70:           <td><%= ride.start %></td>
+  app/views/layouts/application.html.erb:67:in `_app_views_layouts_application_html_erb___4201394722459439608_70130405705660'
+  app/controllers/application_controller.rb:7:in `index'
+
+
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.6ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christinelovett/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-18 11:24:29 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  [1m[35mRide Load (0.9ms)[0m  SELECT "rides".* FROM "rides"
+Completed 200 OK in 149ms (Views: 137.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:24:29 -0400
+
+
+Started GET "/" for ::1 at 2015-09-18 11:25:32 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  [1m[36mRide Load (0.6ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+Completed 200 OK in 133ms (Views: 125.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:25:32 -0400
+
+
+Started GET "/" for ::1 at 2015-09-18 11:25:41 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  [1m[35mRide Load (0.4ms)[0m  SELECT "rides".* FROM "rides"
+Completed 200 OK in 120ms (Views: 118.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:25:41 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:25:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Christine"], ["last_name", "Lovett"], ["email", "rocksolid@gmail.com"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"  [["first_name", "Thomas"], ["last_name", "Lovett"], ["email", "flex200@aol.com"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Pat"], ["last_name", "Lovett"], ["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'rides'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Christine"], ["last_name", "Lovett"], ["email", "rocksolid@gmail.com"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"  [["first_name", "Thomas"], ["last_name", "Lovett"], ["email", "flex200@aol.com"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Pat"], ["last_name", "Lovett"], ["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Users (20150917184755)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "email" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150917184755"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to Rides (20150917184806)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "rides" ("id" serial primary key, "start" character varying, "end" character varying, "distance" integer, "time" integer, "title" character varying, "notes" character varying) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150917184806"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserRefToRides (20150917185008)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "rides" ADD "user_id" integer[0m
+  [1m[35m (2.5ms)[0m  CREATE  INDEX  "index_rides_on_user_id" ON "rides"  ("user_id")
+  [1m[36m (4.0ms)[0m  [1mALTER TABLE "rides" ADD CONSTRAINT "fk_rails_922df144cd"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150917185008"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'rides'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Christine"], ["last_name", "Lovett"], ["email", "rocksolid@gmail.com"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"  [["first_name", "Thomas"], ["last_name", "Lovett"], ["email", "flex200@aol.com"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email") VALUES ($1, $2, $3) RETURNING "id"[0m  [["first_name", "Pat"], ["last_name", "Lovett"], ["email", "feeltheburn@gmail.com"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "rides" ("start", "end", "distance", "time", "title", "user_id", "notes") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["start", "washington"], ["end", "alexandria"], ["distance", 20], ["time", 70], ["title", "Rock creek ride"], ["user_id", 1], ["notes", "It was awesome"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("start", "end", "distance", "time", "title", "user_id", "notes") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start", "washington"], ["end", "bethesda"], ["distance", 20], ["time", 70], ["title", "Rock creek ride"], ["user_id", 2], ["notes", "Best Ride Ever"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "rides" ("start", "end", "distance", "time", "title", "user_id", "notes") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["start", "baltimore"], ["end", "falls church"], ["distance", 20], ["time", 70], ["title", "Rock creek ride"], ["user_id", 2], ["notes", "My legs hurt"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "rides" ("start", "end", "distance", "time", "title", "user_id", "notes") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["start", "washington"], ["end", "baltimore"], ["distance", 80], ["time", 70], ["title", "Rock creek ride"], ["user_id", 1], ["notes", "Saw an eagle!"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "rides" ("start", "end", "distance", "time", "title", "user_id", "notes") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["start", "alexandria"], ["end", "falls church"], ["distance", 20], ["time", 70], ["title", "Rock creek ride"], ["user_id", 3], ["notes", "I can't walk"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-09-18 11:27:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  [1m[35mRide Load (1.1ms)[0m  SELECT "rides".* FROM "rides"
+Completed 200 OK in 616ms (Views: 590.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:27:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:27:48 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:27:48 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:27:48 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:27:49 -0400
+
+
+Started GET "/" for ::1 at 2015-09-18 11:27:56 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  [1m[36mRide Load (0.4ms)[0m  [1mSELECT "rides".* FROM "rides"[0m
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:27:56 -0400
+
+
+Started GET "/" for ::1 at 2015-09-18 11:28:13 -0400
+Processing by ApplicationController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+  [1m[35mRide Load (0.6ms)[0m  SELECT "rides".* FROM "rides"
+Completed 200 OK in 109ms (Views: 107.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/mapbox.self-215a43064c8a7081bf1a5803d737fd41b87bea85ba397a27046168b4a0df9dc6.css?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/application.self-21edaf2512582c1a7fd5f119ba048cb52a8ac2a2152a9c8f2863d60d66cd1a72.css?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone.self-4ac1c9ebee6ebcd1614a8f92d41cb270e61e0b8f61c804c0d1b26fda4b889824.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/handlebars.runtime.self-ed989a562c1ed6fba7ea21ede81be837d85a7b5da40f318cd28e0fe249e5320b.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/application.self-de395b8b9385656e9e8bd75aef13e0616fafacca32ec9b5f06fd52acf84af7c5.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone_rails_sync.self-8e45fa00c2de5897971e95332731a7c9ab7615648df8501ecdfef15db7c990e4.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone/tred.self-18a2a7581147bf4a096053f4a29a09a499b7d0fc24bac14de9ec1f7babab2354.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone_datalink.self-0740aa5c768603aa7bf25bb0c5454e8d1e44f973443badba84a35f60b1355ec7.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone/models/ride.self-da9c59a2effff5e1b722b6973203957f9d49e2c191ca84b0fc5150f8da1ad873.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone/views/ride.self-281eb36b6e7cc88d9b41b9d2c6ad7945468427023b0465d9fc6ffe075ca6780e.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/backbone/collections/rides.self-28cf66c4d690953cabbb2aa05bb8554aca58fa2c9e0908aad316c26ec9e36ede.js?body=1" for ::1 at 2015-09-18 11:28:14 -0400
+
+
+Started GET "/assets/icons-ffffff-6010b31ac48f7d449e12697aa43cab408558b81a435c0b2227300a7ae52591f9.png" for ::1 at 2015-09-18 11:28:14 -0400
