@@ -1,17 +1,19 @@
 App.Views.Ride = Backbone.View.extend({
-  className: 'rideform',
-  tagName: 'tbody',
+  el: '#ridetable',
+  // className: 'rideform',
 
   events: {
-    'click .id': 'createRide'
+    'click .submit': 'createRide'
   },
 
-  // initialize: function() {
-  //   this.listenTo(this.model, 'change', this.render);
-  //   this.template = HandlebarsTemplates['ride'];
-  //   this.render();
-  // },
+  intialize: function() {
+    this.render();
+    this.listenTo(this.model, 'change', this.render);
+    console.log("initialized")
+  },
+
   createRide: function() {
+    event.preventDefault();
     var data = {
       start: this.$("#start").val(),
       end: this.$("#end").val(),
@@ -19,13 +21,16 @@ App.Views.Ride = Backbone.View.extend({
       time: this.$("#time").val(),
       title: this.$("#title").val(),
     }
-    this.model.rides.create(data)
-    console.log("create data works")
+    this.model.rides.create(data);
+
   },
 
   render: function(){
-    var renderedHTML = this.template(this.model.toJSON());
-
+    this.$el.html("hello world")
+    event.preventDefault();
+    var newRide = new App.Views.Ride({model: ride});
+    this.$el.find(".tbody").append(newRide.$el);
+      console.log("render works")
   }
 
 })
