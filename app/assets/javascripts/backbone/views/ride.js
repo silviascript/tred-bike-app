@@ -1,10 +1,18 @@
 App.Views.Ride = Backbone.View.extend({
-  // class_name: "ride",
-  initialie: function(){
+  class_name: "thetable",
+  tagName: 'table',
+
+  initialize: function(){
     this.render()
   },
+
   render: function(){
-    // code to update the el property of this view
-    // this.$el = $("whatever"+ this.model.someProperty + "html")
+    event.preventDefault();
+    __.each(this.model.attributes, function(val, key){
+      var row = "<tr><td>" + val + "</td></tr>";
+      $("#thetable").append(row);
+    });
+    return this;
+      console.log("render works")
   }
-})
+});
