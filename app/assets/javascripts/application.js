@@ -42,6 +42,13 @@ $(document).ready(function() {
   var map = L.mapbox.map('map', 'clovett.ciemz9sg603sbssm2g0v6fm03').setView([40, -74.50], 9);
   var markerLayer = L.mapbox.featureLayer().addTo(map);
 
+  var rides = new App.Collections.Rides;
+  // rides.reset(<%= @rides.to_json %>)
+  rides.fetch().then(function(){
+    var view = new App.Views.CreateRide({collection: rides})
+    // debugger
+  });
+
 });
 
 window.App = {

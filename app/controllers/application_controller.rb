@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
     @rides = Ride.all
      render layout: 'application', text: ''
   end
+
+  private
+
+  # TODO: Remove once we re-add Devise/auth
+  def current_user
+    User.find(1)
+  end
+  helper_method :current_user
 end
