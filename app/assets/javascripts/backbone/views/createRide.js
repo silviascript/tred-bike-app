@@ -1,39 +1,37 @@
 App.Views.CreateRide = Backbone.View.extend({
-  el: '#ride',
-  class_name: 'Ride',
-
-  initialize: function() {
-    this.listenTo(this.model, 'change', this.render);
-    console.log("initialized")
-  },
+  el: '#rideForm',
+  tagName: 'li',
 
   events: {
-    'click .submit': 'create'
+    'click .submit': 'create',
+    'click .close': 'closeForm'
   },
 
   create: function(event) {
     event.preventDefault();
     var data = {
-      start: this.$("#start").val(),
-      end: this.$("#end").val(),
-      distance: this.$("#distance").val(),
-      time: this.$("#time").val(),
-      title: this.$("#title").val(),
+      start: $("#start").val(),
+      end: $("#end").val(),
+      distance: $("#distance").val(),
+      time: $("#time").val(),
+      title: $("#title").val(),
     }
+     $('input').val();
     this.collection.create(data);
-    console.log("new model created")
-  },
+    console.log("new instance model created")
 
-  // render: function(){
-  //   event.preventDefault();
-  //   __.each(this.model.attribtues, function(val, key){
-  //     var row = "<tr><td>" + val + "</td></tr>";
-  //     $("#thetable").append(row);
-  //   });
-  //   return this;
-  //     console.log("render works")
-  //   }
+  },
+  render: function(){
+    event.preventDefault();
+    __.each(this.model.attribtues, function(val, key){
+      var row = "<tr><td>" + val + "</td></tr>";
+      $("#thetable").append(row);
+    });
+    return this;
+      console.log("render works")
+    }
 });
+
 
     // refresh list of rides (#rides tbody)
 

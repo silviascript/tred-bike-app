@@ -11,6 +11,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h1>TredTracker</h1>
   <div>
   <nav id="nav">
     <ul id="nav-items">
@@ -21,6 +22,49 @@
 </div>
 
 <div id='map' class='dark'></div>
+
+
+<form id="rideForm">
+  <span class="close">[x]</span>
+  <h2>Add Ride</h2>
+  <div class="inset">
+    <p>
+      <label for="start">Starting Point</label>
+      <input id="start"></input>
+    </p>
+      <label for="end">End Point</label>
+      <input id="end"></input>
+    <p>
+      <label for="distance">Distance</label>
+      <input id="distance"></input>
+    </p>
+      <label for="time">Time</label>
+      <input id="time"></input>
+    <p>
+      <label for="title">Title</label>
+      <input id="title"></input>
+  </p>
+    <button class="submit">Submit</button>
+  </div>
+</form>
+
+<table id="theTable">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Distance</th>
+      <th>Time</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr id="rideRow">
+        <td></td>
+      </tr>
+    </tbody>
+</table>
 
 
 <%= yield =%>
