@@ -3,21 +3,33 @@ App.Views.ListView = Backbone.View.extend({
 
   initialize: function(){
     console.log("table loaded")
-    this.listenTo(this.model, 'change', this.render);
-    // this.template = HandlebarsTemplates['rideTable']
-    this.render();
+    this.listenTo(this.collection, 'reset', this.renderAll);
+    this.listenTo(this.collection, 'add', this.renderOne);
   },
 
-
   renderAll: function() {
-   this.$el.empty();
-   this.collection.each(this.renderOne, this);
+    console.log("rendering all")
+    // this.$el.empty();
+    this.collection.each(this.renderOne, this);
  },
 
   renderOne: function(ride) {
-    var rideView = new App.Views.Ride({model: ride});
+    var rideView = new App.Views.RideView({model: ride});
     this.$el.append(rideView.$el);
   }
+
+    // console.log("rendering one")
+    // var rides = this.collection.get('rides');
+    // _.each(rides, function(ride){
+    //   var row = "<tr><td>" + val + "</td></tr>";
+    //   this.$el.append(row);
+    // })
+  });
+
+
+    // Do i need to use an _each loop to iterate over each key value pair in the Model
+    // and convert it to Json, how to I then tie it to the correct key?
+
   // render: function() {
   //   var renderedHTML = this.model.toJSON();
   //   this.$el.html(renderedHTML)
@@ -27,17 +39,5 @@ App.Views.ListView = Backbone.View.extend({
   //       $el.append(row);
   //     });
   //     return this;
-  //       console.log("render works")
+
   // }
-
-});
-    // var renderedHTML = this.template(this.model.toJSON());
-    // _.each(rides, function(ride){
-    // this.model.attributes, function(val, key)
-    //   var rideView = new RideView({ model: ride });
-    //   this.$el.append(rideView.render().el);
-    // }, this);
-
-
-    // this.$el.html(this.template(this.model.attributes));
-    // return this;

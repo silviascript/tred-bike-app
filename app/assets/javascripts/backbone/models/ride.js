@@ -4,6 +4,3 @@ App.Models.Ride = Backbone.Model.extend({
    },
   urlRoot: '/rides',
 })
-//
-// var myRide = new App.Models.Ride();
-// console.log(JSON.stringify(myRide))

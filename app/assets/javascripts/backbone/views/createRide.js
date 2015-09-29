@@ -8,29 +8,30 @@ App.Views.CreateRide = Backbone.View.extend({
   },
 
   create: function(event) {
-    event.preventDefault();
-    var data = {
-      start: $("#start").val(),
-      end: $("#end").val(),
+    var formData = {
+      start:    $("#start").val(),
+      end:      $("#end").val(),
       distance: $("#distance").val(),
-      time: $("#time").val(),
-      title: $("#title").val(),
-    }
-     $('input').val();
-    this.collection.create(data);
+      time:     $("#time").val(),
+      title:    $("#title").val(),
+    };
+    this.collection.create(formData);
+    //clear the form
+    $('input').val();
     console.log("new instance model created")
-
-  },
-  render: function(){
-    event.preventDefault();
-    __.each(this.model.attribtues, function(val, key){
-      var row = "<tr><td>" + val + "</td></tr>";
-      $("#thetable").append(row);
-    });
-    return this;
-      console.log("render works")
-    }
+  }
 });
+
+
+  // render: function(){
+  //   event.preventDefault();
+  //   __.each(this.model.attribtues, function(val, key){
+  //     var row = "<tr><td>" + val + "</td></tr>";
+  //     $("#thetable").append(row);
+  //   });
+  //   return this;
+  //     console.log("render works")
+  //   }
 
 
     // refresh list of rides (#rides tbody)
