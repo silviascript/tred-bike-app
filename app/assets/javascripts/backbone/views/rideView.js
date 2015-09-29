@@ -31,15 +31,13 @@ App.Views.RideView = Backbone.View.extend({
     return this;
   },
 
-  // edit: function(){
-  //   //executed when a ride is double clicked
-  // },
-  // close: function(){
-  //   //executed when a ride loses focus
-  // },
-  // updateOnEnter: function(){
-  //   //executed on each keypress when in ride edit mode, action will come later
-  // }
+  edit: function(){
+    console.log("executed when a ride is double clicked")
+  },
+
+  updateOnEnter: function(){
+    console.log("executed on each keypress when in ride edit mode, action will come later")
+  }
 });
 
 
