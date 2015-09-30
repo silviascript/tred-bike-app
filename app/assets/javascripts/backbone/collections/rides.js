@@ -5,4 +5,4 @@ App.Collections.Rides = Backbone.Collection.extend({
   initialize: function(){
     console.log("New Rides Collection")
   }
-})
+});

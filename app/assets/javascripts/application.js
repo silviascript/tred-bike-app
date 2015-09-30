@@ -15,16 +15,16 @@
 //= require turbolinks
 //= require underscore
 //= require backbone
-//= require handlebars.runtime
-//= require_tree ./templates
+//= require handlebars
 //= require_self
+
+//= require_tree ./templates
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require_tree ./backbone/routers
 //= require_tree ./backbone/models
 //= require_tree ./backbone/collections
 //= require_tree ./backbone/views
-//= require backbone_datalink
 //= require backbone/tred
 //= require_tree .
 
@@ -35,20 +35,15 @@ App = {
   Models: {},
   Collections: {},
   Views: {},
-  Routers: {}
+  Routers: {},
+  Templates: {}
 };
 
 $(document).ready(function() {
   L.mapbox.accessToken = 'pk.eyJ1IjoiY2xvdmV0dCIsImEiOiJjaWVtejlzbzcwM3VhczJtMm04d214N3lpIn0.-sC2G_jfDWbhZFY-LraCTw';
   var map = L.mapbox.map('map', 'clovett.ciemz9sg603sbssm2g0v6fm03').setView([40, -74.50], 9);
   var markerLayer = L.mapbox.featureLayer().addTo(map);
-  // rides.reset(<%= @rides.to_json %>)
-  // rides.fetch().then(function(){
-  //   var view = new App.Views.CreateRide({collection: rides})
-  // });
 
-  var rides = new App.Collections.Rides();
-
-  App.router = new App.Router();
+  App.Routers.ride = new App.Routers.Ride();
   Backbone.history.start();
 });

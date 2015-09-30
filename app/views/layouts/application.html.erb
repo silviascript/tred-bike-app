@@ -23,11 +23,15 @@
 
 <div id='map' class='dark'></div>
 
+<div id="createRide">
+  <button class="new">New Ride</button>
+  <div class="formContainer"></div>
+</div>
 
 <form id="rideForm">
   <span class="close">[x]</span>
   <h2>Add Ride</h2>
-  <div class="inset">
+  <div class="formContainer">
     <p>
       <label for="start">Starting Point</label>
       <input id="start"></input>
@@ -47,8 +51,7 @@
     <button class="submit">Submit</button>
   </div>
 </form>
-
-<table id="theTable">
+<table id="tableRides">
   <thead>
     <tr>
       <th>Title</th>
@@ -59,12 +62,8 @@
       <th>Notes</th>
     </tr>
   </thead>
-  <tbody>
-      <tr id="rideRow">
-        <td></td>
-      </tr>
-    </tbody>
 </table>
+
 
 
 <%= yield =%>

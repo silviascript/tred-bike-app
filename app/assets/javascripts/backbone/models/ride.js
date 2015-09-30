@@ -3,4 +3,4 @@ App.Models.Ride = Backbone.Model.extend({
        console.log('New Ride Model Created');
    },
   urlRoot: '/rides',
-})
+});
