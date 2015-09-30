@@ -15,11 +15,11 @@ App.Routers.Ride = Backbone.Router.extend({
   },
 
   index: function(){
-    $('#tableRides').fadeIn();
+    // $('#tableRides').fadeIn();
     App.Collections.rides.fetch()
   },
   newRide: function(){
-    $('#rideForm').fadeIn();
+    // $('#rideForm').fadeIn();
     App.Collections.rides.fetch()
   },
   editRide: function(){
