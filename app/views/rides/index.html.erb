@@ -1,4 +1,9 @@
+<div id="rides"></div>
 
-
-
-    <!-- <tr class="ridetable"> -->
+<script type="text/javascript">
+  $(function() {
+    // Blog is the app name
+    window.router = new App.Routers.Ride({rides: <%= @rides.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>

@@ -116,22 +116,15 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 
 <div id="status">
 </div>
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////
 
   <h1>Tred<i class="fa fa-bicycle"></i>Tracker</h1>
   <div>
   <nav id="nav">
     <ul id="nav-items">
-        <li><div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div></li>
+        <li><div class="fb-login-button" scope="public_profile,email" onlogin="checkLoginState();" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div></li>
         <li id="account-info"><a href="#"> Sign out</a></li>
         <li id="account-info"><a href="#"> | My Account</a></li>
     </ul>
