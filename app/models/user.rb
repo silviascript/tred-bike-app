@@ -13,6 +13,3 @@ class User < ActiveRecord::Base
     end
   end
 end
-end
-
-# auth_hash['uid'], provider: auth_hash['provider'])
