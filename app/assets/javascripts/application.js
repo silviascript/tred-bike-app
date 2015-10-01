@@ -45,5 +45,5 @@ $(document).ready(function() {
   var markerLayer = L.mapbox.featureLayer().addTo(map);
 
   App.Routers.ride = new App.Routers.Ride();
-  // Backbone.history.start();
+  Backbone.history.start();
 });

@@ -1,11 +1,18 @@
 class User < ActiveRecord::Base
-  def from_omniauth(auth_hash)
-    user = find_or_create_by(uid: auth_hash['uid'], provider: auth_hash['provider'])
-    user.name = auth_hash['info']['name']
-    user.location = auth_hash['info']['location']
-    user.image_url = auth_hash['info']['image']
-    user.url = auth_hash['info']['urls'][user.provider.capitalize]
-    user.save!
-    user
+  has_many :rides
+
+  def self.omniauth(auth)
+    where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
+      user.provider = auth.provider
+      user.uid = auth.uid
+      user.name = auth.info.name
+      user.image = auth.info.image
+      user.token = auth.credentials.token
+      user.expires_at = Time.at(auth.credentials.expires_at)
+      user.save!
+    end
   end
 end
+end
+
+# auth_hash['uid'], provider: auth_hash['provider'])

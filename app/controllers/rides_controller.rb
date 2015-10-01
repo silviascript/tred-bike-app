@@ -7,7 +7,7 @@ class RidesController < ApplicationController
   end
 
   def show
-    @ride = current_user.rides.find(params[:id])
+    @ride = Ride.find(params[:id])
     render status: 200, json: @ride.to_json
   end
 
@@ -33,7 +33,7 @@ class RidesController < ApplicationController
   end
 
   def usercreate
-    user = User.from_omniauth(env["omniauth.auth"])
+    user = User.omniauth(env["omniauth.auth"])
     session[:user_id] = @user.id
     redirect_to root_path
   end

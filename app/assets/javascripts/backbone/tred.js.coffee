@@ -4,8 +4,8 @@
 #= require_tree ./views
 #= require_tree ./routers
 
-window.Tred =
-  Models: {}
-  Collections: {}
-  Routers: {}
-  Views: {}
+# window.Tred =
+#   Models: {}
+#   Collections: {}
+#   Routers: {}
+#   Views: {}
