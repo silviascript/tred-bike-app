@@ -5,6 +5,7 @@ App.Routers.Ride = Backbone.Router.extend({
     'rides/:id/edit': 'editRide'
   },
   initialize: function(){
+    // console.log("router liftoff")
     App.Collections.rides = new App.Collections.Rides();
 
     App.Views.createRide =  new App.Views.CreateRide({collection: App.Collections.rides});

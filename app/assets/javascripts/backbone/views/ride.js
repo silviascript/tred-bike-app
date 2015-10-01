@@ -3,9 +3,10 @@ App.Views.Ride = Backbone.View.extend({
   tagName: 'div',
 
   initialize: function(){
-    console.log(this.model);
+    console.dir(this)
+    console.log(this.models + " -->ride view  can't find model");
     this.template = HandlebarsTemplates['rideTable'](this.model.toJSON());
-    this.listenTo(this.model, 'change', this.render);
+    this.listenTo(App.Models.Ride, 'change', this.render);
     this.render();
   },
   events: {
@@ -14,9 +15,9 @@ App.Views.Ride = Backbone.View.extend({
   },
   render: function(){
     var source = $('#rideTable').html();
-    var template = Handlebars.compile(source);
-    var html = template(this.model.toJSON());
-    this.$el.html(html);
+    // var template = Handlebars.compile(source);
+    // var html = template(this.model.toJSON());
+    // this.$el.html(html);
   },
   edit: function(){
     console.log("executed when a ride is double clicked")

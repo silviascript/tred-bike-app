@@ -2,6 +2,7 @@ App.Views.RideList = Backbone.View.extend({
   el: '#tableRides',
 
   initialize: function(){
+    // console.log(this.model + " -->rideList view  can't find model");
     this.listenTo(this.collection, 'add', this.renderOne);
     this.listenTo(this.collection, 'reset', this.renderAll);
   },

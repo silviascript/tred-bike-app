@@ -1,7 +1,8 @@
 class RidesController < ApplicationController
 
   def index
-    @rides = Ride.all.order(:distance)
+    @rides = Ride.all
+    # .order(:distance) to be used once i figure out how I want to sort rides
     render status: 200, json: @rides.to_json
   end
 
@@ -29,6 +30,17 @@ class RidesController < ApplicationController
     if @ride.destroy
       render json: @ride.to_json, status: 200
     end
+  end
+
+  def usercreate
+    user = User.from_omniauth(env["omniauth.auth"])
+    session[:user_id] = @user.id
+    redirect_to root_path
+  end
+
+  def userdestroy
+      session[:user_id] = nil
+      redirect_to root_path
   end
 
   private

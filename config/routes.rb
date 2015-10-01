@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
 
   root to: 'application#index'
+
+  get 'auth/:provider', to: 'rides#usercreate'
+  get 'auth/failure', to: redirect('/')
+  get '/logout', to: 'rides#userdestroy'
+  delete '/logout', to: 'rides#userdestroy'
+
   resources :rides
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
