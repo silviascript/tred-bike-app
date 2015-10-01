@@ -2,7 +2,7 @@ class RidesController < ApplicationController
 
   def index
     @rides = Ride.all.order(:distance)
-    # render status: 200, json: @rides.to_json
+    render status: 200, json: @rides.to_json
   end
 
   def show

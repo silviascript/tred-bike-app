@@ -15,4 +15,7 @@ App.Views.RideList = Backbone.View.extend({
     var rideView = new App.Views.Ride({ model: ride});
     var rides = this.collection.get('rides');
   }
+  //go to rails and verify that the model is correct in rails and everthing is aligned correctly
+  //use find view to find the correct model with a loop
+  //the problem is its not finding the model, thats why toJSON isn't working
 });
