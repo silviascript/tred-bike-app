@@ -5,7 +5,7 @@ gem "rails-backbone"
 
 gem 'handlebars_assets'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-
+gem 'rails_12factor'
 
 gem "bootstrap-sass-rails", "~> 2.2.2.0"
 
