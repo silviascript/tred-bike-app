@@ -5,7 +5,8 @@ App.Views.Ride = Backbone.View.extend({
   events: {
     'dblclick .edit': 'edit',
     'click .submit': 'update',
-    "blur .edit"      : "close"
+    'blur .edit'      : "close",
+    'click .cancel' : 'render'
   },
 
   initialize: function(){

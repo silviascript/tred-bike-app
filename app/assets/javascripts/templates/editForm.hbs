@@ -1,11 +1,12 @@
-
-  <div id ="editForm">
-    <form class="grumbleForm">
+<div id ="editForm">
+    <form class="editRideForm">
       <input type="text" name="title" value="{{ title }}">
-      by: <input type="text" name="start" value="{{ start }}">
-      <textarea name="end">{{ end }}</textarea>
-      <input type = "text" name="distance" value= "{{distance}}">
+      <input type="text" name="start" value="{{ start }}">
+      <input type="text" name="end" value="{{ end }}">
+      <input type="text" name="distance" value="{{ distance }}">
+      <input type="text" name="time" value="{{ time }}">
       <button class="submit">Submit</button>
+      <button class="delete">Delete</button>
       <button class="cancel">Cancel</button>
     </form>
 </div>
