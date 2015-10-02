@@ -2,10 +2,8 @@ Rails.application.routes.draw do
 
   root to: 'application#index'
 
-  get 'auth/:provider', to: 'rides#usercreate'
-  get 'auth/failure', to: redirect('/')
-  get '/logout', to: 'rides#userdestroy'
-  delete '/logout', to: 'rides#userdestroy'
+  get "/auth/twitter/callback", to: "rides#usercreate"
+  get "/logout", to: "rides#userdestroy"
 
   resources :rides
 

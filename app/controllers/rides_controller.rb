@@ -33,9 +33,9 @@ class RidesController < ApplicationController
   end
 
   def usercreate
-    user = User.omniauth(env["omniauth.auth"])
-    session[:user_id] = @user.id
-    redirect_to root_path
+    @user = User.from_auth(request.env["omniauth.auth"])
+    session[:user_id]=@user.id
+    redirect_to "/"
   end
 
   def userdestroy

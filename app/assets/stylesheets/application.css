@@ -26,6 +26,10 @@ body {
   height: 100%;
   background:#1f2124;
 }
+div .container-fluid{
+  height: 10px;
+}
+
 .column {
   float: left;
   /*position: relative;*/
@@ -49,6 +53,7 @@ h1{
   text-transform: uppercase;
 }
 div#map {
+  top: 10%;
   position: relative;
   width: 900px;
   height: 400px;
