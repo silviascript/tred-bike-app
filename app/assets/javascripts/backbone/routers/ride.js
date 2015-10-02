@@ -13,10 +13,9 @@ App.Routers.Ride = Backbone.Router.extend({
     App.Collections.rides.fetch()
   },
   newRide: function(){
-    // $('#rideForm').fadeIn();
     App.Collections.rides.fetch();
   },
-  editRide: function(){
+  editRide: function(id){
     App.Collections.rides.fetch().then(function(){
       view = App.Views.rideList.find(id);
     })
