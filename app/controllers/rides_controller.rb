@@ -1,7 +1,7 @@
 class RidesController < ApplicationController
 
   def index
-    @rides = Ride.all
+    @rides = Ride.all.order(:id)
     # .order(:distance) to be used once i figure out how I want to sort rides
     render status: 200, json: @rides.to_json
   end

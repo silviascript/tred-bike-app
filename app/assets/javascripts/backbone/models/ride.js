@@ -1,6 +1,6 @@
 App.Models.Ride = Backbone.Model.extend({
+  urlRoot: 'rides',
   initialize: function(){
-      //  console.log('New Ride Model Created');
+       console.log('New Ride Model Created');
    },
-  urlRoot: '/rides',
 });

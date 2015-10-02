@@ -1,18 +1,23 @@
 App.Views.Ride = Backbone.View.extend({
-  el: '#tableRides',
-  tagName: 'div',
+  // el: '#table',
+  // tagName: 'td',
+
+  events: {
+    // 'click .edit': 'renderEditForm',
+    // 'click .submit': 'updateGrumble',
+    // 'click .delete': 'deleteGrumble',
+  },
 
   initialize: function(){
-    this.template = HandlebarsTemplates['rideTable'](this.model.toJSON());
-    this.listenTo(App.Models.Ride, 'change', this.render);
+    this.listenTo(this.model, 'change', this.render);
+    this.listenTo(this.model, 'add', this.render);
+    this.template = HandlebarsTemplates['rideTable'];
     this.render();
   },
-  events: {
-    'dblclick label': 'edit',
-    'keypress .edit': 'updateOnEnter',
-  },
+
   render: function(){
-    this.$el.html(this.template);
+    var renderedHTML = this.template(this.model.toJSON());
+    this.$el.html(renderedHTML);
   },
   edit: function(){
     console.log("executed when a ride is double clicked")

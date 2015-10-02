@@ -4,8 +4,7 @@ Rails.application.routes.draw do
 
   get "/auth/twitter/callback", to: "rides#usercreate"
   get "/logout", to: "rides#userdestroy"
-
-  resources :rides
+    resources :rides
 
 
   # The priority is based upon order of creation: first created -> highest priority.

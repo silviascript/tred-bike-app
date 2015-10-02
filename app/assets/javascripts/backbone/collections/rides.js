@@ -1,6 +1,6 @@
 App.Collections.Rides = Backbone.Collection.extend({
   model: App.Models.Ride,
-  url: "/rides",
+    url: '/rides',
 
   initialize: function(){
     // console.dir(App)

@@ -5,9 +5,6 @@ App.Views.CreateRide = Backbone.View.extend({
   events: {
     'click .submit': 'create',
   },
-  initialize: function(){
-    // console.log(this.model + " -->createRide view  can't find model");
-  },
 
   create: function(event) {
     event.preventDefault();
@@ -21,6 +18,6 @@ App.Views.CreateRide = Backbone.View.extend({
     this.collection.create(formData);
     //clear the form
     this.$el.find("input, textarea").val("");
-    // console.log("new instance model created")
+    console.log("new instance model created")
   }
 });
