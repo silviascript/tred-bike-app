@@ -6,7 +6,8 @@ App.Views.Ride = Backbone.View.extend({
     'dblclick .edit': 'edit',
     'click .submit': 'update',
     'blur .edit'      : "close",
-    'click .cancel' : 'render'
+    'click .cancel' : 'render',
+    'click .delete' : 'delete'
   },
 
   initialize: function(){
@@ -19,6 +20,7 @@ App.Views.Ride = Backbone.View.extend({
   render: function(){
     var renderedHTML = this.template(this.model.toJSON());
     this.$el.html(renderedHTML);
+    this.$el.fadeIn();
     this.input = this.$('.edit');
     return this;
   },
@@ -41,5 +43,11 @@ App.Views.Ride = Backbone.View.extend({
     }
     this.model.save(data);
   },
+
+  delete: function(){
+    event.preventDefault();
+    this.model.destroy();
+    this.$el.fadeOut();
+  }
 
 });
