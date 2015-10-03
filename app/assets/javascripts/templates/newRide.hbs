@@ -1,28 +1,32 @@
-<form id="rideForm">
-  <h1>Add a new ride</h1>
-  <div class="inset">
-    <p>
-      <label for="password">Title</label>
-      <input type="text" placeholder="Name your trip" id="title">
-    </p>
-    <p>
-      <label for="email">Origin</label>
-      <input type="text" placeholder="Where'd you start your ride?" id="start">
-    </p>
-    <p>
-      <label for="password">Destination</label>
-      <input type="text" placeholder="Where'd you ride to?"id="end">
-    </p>
-    <p>
-      <label for="password">Distance</label>
-      <input type="text" placeholder="We'll fill this in for you" id="distance">
-    </p>
-    <p>
-      <label for="password">Time</label>
-      <input type="text" placeholder="How long was your ride?" id="time">
-    </p>
+<form class="form-horizontal">
+    <div class="form-group">
+      <label for="title" class="col-sm-2 control-label">Title</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="title" placeholder="">
+      </div>
     </div>
-    <p class="p-container">
-      <input type="submit" value="Add it">
-    </p>
+    <div class="form-group" id="createRide">
+      <label for="start" class="col-sm-2 control-label">Origin</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="start" placeholder="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="destination" class="col-sm-2 control-label">Destination</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="end" placeholder="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="distance" class="col-sm-2 control-label">Distance</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="distance" placeholder="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="time" class="col-sm-2 control-label">Time</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="time" placeholder="">
+      </div>
+    </div>
 </form>
