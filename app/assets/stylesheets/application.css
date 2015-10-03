@@ -23,13 +23,25 @@ body {
   color: white;
   font-family: 'Lato', 'Arial', sans-serif;
   height: 100%;
-  background:#1f2124;
+  background: white;
+  margin:0;
+  padding: 0;
+  /*background:#1f2124;*/
 }
 .navbar {
   height: 20px;
   background-color: grey;
   color: white;
 }
+.logo{
+  color: white;
+  font-size: 2em;
+}
+.twitter{
+  background-color: white;
+  font-size: 1.5em;
+  margin: -1px;
+ }
 
 .column {
   float: left;
@@ -71,7 +83,7 @@ a, a:visited {
    padding: 2px;
 }
 
-form {
+#rideForm {
  	background:linear-gradient(#777, #444);
   width:400px;
   height: 400px;
@@ -80,7 +92,7 @@ form {
   position:relative;
   padding: 3px;
 }
-form h2 {
+#rideForm h2 {
   text-align: left;
 }
 .formContainer{
@@ -185,4 +197,57 @@ td {
   width: 20%;
   font-size: 17px;
   margin: 0;
+}
+/*mapbox styling*/
+#inputs,
+#errors,
+#directions {
+    position: absolute;
+    width: 33.3333%;
+    max-width: 300px;
+    min-width: 200px;
+}
+#directions{
+  height: 400px;
+  margin-top: 5%; margin-right: 8%;
+  width: 30%;
+  font-size: 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#directions button{
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  background: none;
+  font-size: 15px;
+  margin: 0;
+}
+
+div#inputs.mapbox-directions-inputs{
+  top: 9%;
+}
+#inputs {
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+}
+
+#directions {
+    z-index: 99;
+    background: rgba(0,0,0,.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+#errors {
+    z-index: 8;
+    opacity: 0;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    background: rgba(0,0,0,.25);
+    top: 90px;
+    left: 10px;
 }

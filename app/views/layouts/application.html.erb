@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js"></script>
+  <link href="https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css" rel="stylesheet" />
+  <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src='https://api.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.3.0/mapbox.directions.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.3.0/mapbox.directions.css' type='text/css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> 
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <title>Tred</title>
-  <%= stylesheet_link_tag    'application', media: 'all'%>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    "application", media: "all"%>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,14 +19,14 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Tred<i class="fa fa-bicycle"></i>Tracker</a>
+      <a class="logo" href="#">Tred<i class="fa fa-bicycle"></i>Tracker</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" id="nav-items">
         <% if current_user %>
-        <li id="account-info"><a href='/logout'><i class="fa fa-twitter"></i> Log Out</a></li>
+        <li class="twitter"><a href="/logout"><i class="fa fa-twitter"></i> Log Out</a></li>
         <% else %>
-        <li id="account-info"><a href="/auth/twitter"><i class="fa fa-twitter"></i> Log in with Twitter</a></li>
+        <li class="twitter"><a href="/auth/twitter"><i class="fa fa-twitter"></i> Log in with Twitter</a></li>
         <% end %>
       </ul>
     </div>
@@ -33,6 +35,16 @@
 
 <div class="row">
   <div class="column column-9" id="map"></div>
+    <div id="inputs"></div>
+    <div id="errors"></div>
+    <div id="directions">Directions
+      <div id="routes"></div>
+      <div id="instructions"></div>
+    <button class="submit">Save Ride</button>
+    </div>
+
+
+  </div>
   <div class="column column-3" id="createRide">
     <form id="rideForm">
       <h2>New Ride:</h2>
@@ -49,23 +61,21 @@
 </div>
 
 <div class="row">
-  <div class="column-12">
+  <div class="column column-12">
     <table>
     <thead>
       <th>Title</th>
-      <th>Start</th>
-      <th>End</th>
+      <th>Origin</th>
+      <th>Destination</th>
       <th>Distance</th>
       <th>Time</th>
     </thead>
   </table>
   </div>
 </div>
-<div class="row">
-  <div class="column-12">
-    <table id="tableRides"></table>
-  </div>
-</div>
+
+<table id="tableRides"></table>
+
 
 <%= yield =%>
 
