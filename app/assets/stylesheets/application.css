@@ -126,7 +126,19 @@ table {
 	box-shadow: inset 0 1px 0 #fff;
 	font-size: 12px;
 	line-height: 24px;
-	margin: 3%;
+	margin-top: 5%;
+  margin-left: 3%;
+	text-align: left;
+	width: 90%;
+}
+table#tableRides {
+  margin-left: 3%;
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin-top: 0%;
 	text-align: left;
 	width: 90%;
 }
@@ -139,9 +151,11 @@ th {
 	box-shadow: inset 0 1px 0 #999;
 	color: #fff;
   font-weight: bold;
+  font-size: 18px;
 	padding: 10px 15px;
 	position: relative;
 	text-shadow: 0 1px 0 #000;
+  width: 20%
 }
 th:after {
 	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
@@ -167,6 +181,8 @@ td {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #e8e8e8;
 	padding: 10px 15px;
-	position: relative;
   color: black;
+  width: 20%;
+  font-size: 17px;
+  margin: 0;
 }

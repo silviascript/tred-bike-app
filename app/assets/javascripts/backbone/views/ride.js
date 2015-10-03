@@ -18,6 +18,7 @@ App.Views.Ride = Backbone.View.extend({
   },
 
   render: function(){
+    event.preventDefault();
     var renderedHTML = this.template(this.model.toJSON());
     this.$el.html(renderedHTML);
     this.$el.fadeIn();
