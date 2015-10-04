@@ -39,10 +39,11 @@ App.Routers.Ride = Backbone.Router.extend({
 
   },
   index: function(){
+    $("#new-ride-modal").hide();
     App.Collections.rides.fetch()
   },
   newRide: function(){
-    App.Collections.rides.fetch();
+    $("#new-ride-modal").fadeIn();
   },
   editRide: function(id){
     App.Collections.rides.fetch().then(function(){

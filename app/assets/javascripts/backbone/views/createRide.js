@@ -1,9 +1,22 @@
 App.Views.CreateRide = Backbone.View.extend({
-  el: '#rideForm',
-  tagName: 'li',
+  el: '#map-ride-add',
 
   events: {
+    'click #save' : 'render',
     'click .submit': 'create',
+    'click .close': 'closeForm'
+  },
+
+  render: function(){
+    console.log("new ride modal is clicked")
+    $("#new-ride-modal").fadeIn();
+    var mapstart = $("#mapbox-directions-origin-input").val()
+    var mapend = $("#mapbox-directions-destination-input").val()
+
+    $("#start").val(mapstart)
+    $("#end").val(mapend)
+
+
   },
 
   create: function(event) {
@@ -16,8 +29,13 @@ App.Views.CreateRide = Backbone.View.extend({
       title:    $("#title").val(),
     };
     this.collection.create(formData);
-    //clear the form
     this.$el.find("input, textarea").val("");
-    console.log("new instance model created")
+    this.closeForm();
+    //clear the form
+  },
+
+  closeForm: function(){
+    $("#new-ride-modal").fadeOut();
+    App.router.navigate('');
   }
 });
