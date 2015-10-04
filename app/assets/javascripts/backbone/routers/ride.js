@@ -38,6 +38,7 @@ App.Routers.Ride = Backbone.Router.extend({
           .addTo(map);
 
   },
+  
   index: function(){
     $("#new-ride-modal").hide();
     App.Collections.rides.fetch()

@@ -51,24 +51,18 @@
     <h2>New Ride</h2>
     <div class="new-ride">
         <input id="title" placeholder="Title"></input>
-
-        <input name="start" id="start" placeholder="Origin" value=""></input>
-        <!-- $("#mapbox-directions-origin-input").val() -->
-
+        <input id="start" placeholder="Origin" value=""></input>
         <input id="end" placeholder="Destination"></input>
-
         <input id="distance" placeholder="Total Miles"></input>
-
         <input id="time" placeholder="Ride Time"></input>
-
       <button class="submit">Add</button>
     </div>
   </div>
 </div>
 
 <div class="row">
-  <div class="column column-12">
-    <table>
+  <div class="column column-10" id="table">
+    <table id="table">
     <thead>
       <th>Title</th>
       <th>Origin</th>
@@ -81,7 +75,6 @@
 </div>
 
 <table id="tableRides"></table>
-
 
 <%= yield =%>
 

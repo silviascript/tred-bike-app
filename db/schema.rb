@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20151002013039) do
     t.integer "distance"
     t.integer "time"
     t.string  "title"
-    t.string  "notes"
   end
 
   create_table "users", force: :cascade do |t|

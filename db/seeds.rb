@@ -13,8 +13,8 @@
 users = User.create([{name: "Christine"}, {name: "Thomas"}, {name: "Pat"}])
 
 rides = Ride.create([
-        {start: "washington", end: "alexandria", distance: 20, time: 70, title: 'Rock creek ride'},
-        {start: "washington", end: "bethesda", distance: 20, time: 70, title: 'Rock creek ride'},
-        {start: "baltimore", end: "falls church", distance: 20, time: 70, title: 'Rock creek ride'},
-        {start: "washington", end: "baltimore", distance: 80, time: 70, title: 'Rock creek ride'},
-        {start: "alexandria", end: "falls church", distance: 20, time: 70, title: 'Rock creek ride'}])
+        {start: "washington", end: "alexandria", distance: "20 mi", time: "7 h", title: 'Rock creek ride'},
+        {start: "washington", end: "bethesda", distance: "10 mi" , time: "2 h 20 min", title: 'Rock creek ride'},
+        {start: "baltimore", end: "falls church", distance: "30 mi", time: "3 h 30 min", title: 'Rock creek ride'},
+        {start: "washington", end: "baltimore", distance: "80 mi", time: "7 h 20 min", title: 'Rock creek ride'},
+        {start: "alexandria", end: "falls church", distance: "20 mi", time: "2 h", title: 'Rock creek ride'}])

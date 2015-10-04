@@ -24,6 +24,7 @@ App.Views.Ride = Backbone.View.extend({
     this.$el.fadeIn();
     this.input = this.$('.edit');
     return this;
+    App.Routers.ride.navigate('index')
   },
 
   edit: function(){
@@ -43,6 +44,7 @@ App.Views.Ride = Backbone.View.extend({
       title: this.$("[name='title']").val()
     }
     this.model.save(data);
+    App.Routers.ride.navigate('')
   },
 
   delete: function(){
