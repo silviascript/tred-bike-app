@@ -18,29 +18,37 @@
 }
 html {
   height: 100%;
+  margin: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 body {
-  color: white;
+  height: 100%;
+  color: #FAFAFA;
   font-family: 'Lato', 'Arial', sans-serif;
   height: 100%;
-  background: white;
   margin:0;
   padding: 0;
   background: #FAFAFA;
+  height: 100vh;
 }
+
 .navbar {
   height: 20px;
   background: linear-gradient(#777, #444);
-  color: white;
+  color: #FAFAFA;
+  width: 100%;
 }
 .logo{
-  color: white;
+  color: #FAFAFA;
   font-size: 2em;
+  float: left;
 }
 .twitter{
   background-color: #FAFAFA;
   font-size: 1.5em;
   margin: -1px;
+  float: right;
  }
 
 .column {
@@ -62,7 +70,7 @@ body {
 }
 h1{
   font-size: 2em;
-  color: white;
+  color: #FAFAFA;
   text-transform: uppercase;
 }
 div#map {
@@ -76,15 +84,15 @@ ul{
    list-style-type: none;
 }
 a, a:visited {
-   color: white;
+   color: #FAFAFA;
    text-decoration: none;
    cursor: auto;
    padding: 2px;
 }
 #new-ride-modal {
  	background:linear-gradient(#777, #444);
-  font-size: 15px;
-  width:95%;
+  font-size: 2vh;
+  width:100%;
   border-radius:0.5em;
   overflow:hidden;
   position:relative;
@@ -93,15 +101,17 @@ a, a:visited {
   background-color: grey;
 }
 #new-ride-modal h2 {
+  font-size: 3vh;
   text-align: center;
   text-transform: uppercase;
 }
+
 input{
   color: black;
-  /*display: inline;*/
   margin-left: 1.5em;
   margin-bottom: 1em;
-  border: 2px solid grey;
+  border: 1px solid grey;
+  border-radius: 5px;
   font-size: 1.3em;
   width: 15%;
 }
@@ -109,6 +119,7 @@ button{
   color: black;
   margin: 1em;
 }
+
 /*table styles*/
 .editRideForm{
   background: #f5f5f5;
@@ -123,12 +134,13 @@ button{
 }
 
 button.delete{
-  background-color: red;
-  color: white;
+  background-color: #FF4D4D;
+  color: #FAFAFA;
 }
 button.submit{
-  background-color: green;
-  color: white;
+  background-color: #51AE51;
+  color: #FAFAFA;
+  border-radius: 5px;
 }
 table {
 	border-collapse: separate;
@@ -136,7 +148,7 @@ table {
 	line-height: 24px;
 	margin-top: 2em;
 	text-align: left;
-	width: 95%;
+	width: 100%;
 }
 #table {
   width: 100%;
@@ -146,10 +158,10 @@ table {
 	border-collapse: separate;
 	box-shadow: inset 0 1px 0 #fff;
 	font-size: 12px;
-	line-height: 24px;
+	line-height: 3vh;
 	margin-top: 0%;
 	text-align: left;
-	width: 95%;
+	width: 100%;
 }
 th {
 	background:  linear-gradient(#777, #444);
@@ -157,14 +169,15 @@ th {
 	border-right: 1px solid #777;
 	border-top: 1px solid #555;
 	border-bottom: 1px solid #333;
-	/*box-shadow: inset 0 1px 0 #999;*/
+	box-shadow: inset 0 1px 0 #999;
 	color: #fff;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 3vh;
 	padding: 10px 0 15px 0;
 	position: relative;
 	text-shadow: 0 1px 0 #000;
-  width: 20%
+  text-align: center;
+  width: 20vw;
 }
 th:after {
 	content: '';
@@ -173,7 +186,6 @@ th:after {
 	left: 0;
 	margin: 1px 0 0 0;
 	position: absolute;
-	top: 25%;
 	width: 100%;
 }
 
@@ -185,8 +197,9 @@ td {
 	padding: 10px 0 15px 0;
   color: black;
   width: 20%;
-  font-size: 17px;
+  font-size: 2vh;
   margin: 0;
+  text-align: center;
 }
 /*mapbox styling*/
 #inputs,
@@ -212,11 +225,23 @@ td {
   font-size: 15px;
   margin: 0;
   background-color: #51AE51;
-  color:white;
+  color:#FAFAFA;
 }
+div.mapbox-directions-routes {
+
+  font-size: 17px;
+
+}
+/*div.mapbox-directions-profile{
+  background-color: #51AE51;
+  this is the id for the driving and walking and cycling
+}*/
 
 div#inputs.mapbox-directions-inputs{
   top: 9%;
+}
+.mapbox-directions-inputs input {
+  font-size: 15px;
 }
 #inputs {
     z-index: 10;
