@@ -39,8 +39,6 @@ App.Views.CreateRide = Backbone.View.extend({
     this.$el.find("input, textarea").val("");
     this.closeForm();
     App.router.navigate('');
-
-    //clear the form
   },
 
   closeForm: function(){

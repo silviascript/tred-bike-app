@@ -46,11 +46,16 @@ body {
 }
 .twitter{
   background-color: #FAFAFA;
-  font-size: 1.5em;
   margin: -1px;
   float: right;
  }
-
+.navbar-default .navbar-nav>li>a {
+  color: #55acee;
+  font-size: 1.3em;
+}
+.mapbox-directions-profile label > nth-child(1){
+    display: none;
+}
 .column {
   float: left;
   margin-left: 2em;
@@ -88,6 +93,9 @@ a, a:visited {
    text-decoration: none;
    cursor: auto;
    padding: 2px;
+}
+#save:visited {
+  text-decoration: none;
 }
 #new-ride-modal {
  	background:linear-gradient(#777, #444);

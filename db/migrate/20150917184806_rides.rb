@@ -3,8 +3,8 @@ class Rides < ActiveRecord::Migration
     create_table :rides do |t|
       t.string :start
       t.string :end
-      t.integer :distance
-      t.integer :time
+      t.string :distance
+      t.string :time
       t.string :title
     end
   end

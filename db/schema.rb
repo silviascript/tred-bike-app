@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151002013039) do
+ActiveRecord::Schema.define(version: 20151005195702) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,10 +19,13 @@ ActiveRecord::Schema.define(version: 20151002013039) do
   create_table "rides", force: :cascade do |t|
     t.string  "start"
     t.string  "end"
-    t.integer "distance"
-    t.integer "time"
+    t.string  "distance"
+    t.string  "time"
     t.string  "title"
+    t.integer "user_id"
   end
+
+  add_index "rides", ["user_id"], name: "index_rides_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -30,4 +33,5 @@ ActiveRecord::Schema.define(version: 20151002013039) do
     t.string "uid"
   end
 
+  add_foreign_key "rides", "users"
 end

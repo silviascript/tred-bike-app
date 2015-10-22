@@ -2,9 +2,11 @@ Rails.application.routes.draw do
 
   root to: 'application#index'
 
-  get "/auth/twitter/callback", to: "rides#usercreate"
-  get "/logout", to: "rides#userdestroy"
-    resources :rides
+  get "/auth/twitter/callback", to: "users#create"
+  get "/logout", to: "users#destroy"
+    resources :users do
+      resources :rides
+    end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

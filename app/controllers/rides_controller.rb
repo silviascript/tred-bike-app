@@ -1,18 +1,21 @@
 class RidesController < ApplicationController
 
   def index
-    @rides = Ride.all.order(:id)
-    # .order(:distance) to be used once i figure out how I want to sort rides
+    @user = User.find(params[:user_id])
+    @rides = @user.rides
     render status: 200, json: @rides.to_json
   end
 
   def show
-    @ride = Ride.find(params[:id])
+    @user = User.find(params[:id])
+    @rides = @user.rides
+    # @ride = Ride.find(params[:id])
     render status: 200, json: @ride.to_json
   end
 
   def create
-    @ride = Ride.new(ride_params)
+    @user = User.find(params[:user_id])
+     @ride = Ride.create!(ride_params_merge(user: @user))
     if @ride.save
       render json: @ride.to_json, status: 200
     end
@@ -32,20 +35,9 @@ class RidesController < ApplicationController
     end
   end
 
-  def usercreate
-    @user = User.from_auth(request.env["omniauth.auth"])
-    session[:uid]=@user.id
-    redirect_to "/"
-  end
-
-  def userdestroy
-      session[:uid] = nil
-      redirect_to root_path
-  end
-
   private
   def ride_params
-    params.require(:ride).permit(:start, :end, :distance, :time, :title)
+    params.require(:ride).permit(:start, :end, :distance, :time, :title, :user_id)
   end
 
 end
