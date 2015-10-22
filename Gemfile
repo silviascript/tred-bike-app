@@ -7,6 +7,8 @@ gem 'handlebars_assets'
 
 gem 'omniauth'
 
+gem 'pry'
+
 gem 'omniauth-twitter'
 
 gem 'rails_12factor'

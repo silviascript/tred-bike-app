@@ -14,8 +14,11 @@ class RidesController < ApplicationController
   end
 
   def create
+    binding.pry
+    byebug
     @user = User.find(params[:user_id])
-     @ride = Ride.create!(ride_params_merge(user: @user))
+    binding.pry
+     @ride = Ride.create!(ride_params(:user_id)
     if @ride.save
       render json: @ride.to_json, status: 200
     end
