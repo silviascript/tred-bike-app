@@ -16,16 +16,11 @@ App.Views.CreateRide = Backbone.View.extend({
 
     $("#start").val(mapstart)
     $("#end").val(mapend)
-    console.log(route1)
-
-    var res = route1.split(" ");
-    var commaDistance = res.splice(0,2).join(" ");
-    var distance = commaDistance.slice(1, -1)
-    console.log(distance)
-    var time = res.splice(0, 6).join(" ")
-    console.log(time)
-
-    $("#distance").val(distance)
+    //regex determines mileage and time based on string response from mapbox
+    var matches = route1.match(/(\d+\.?\d*\s*mi),\s(\d?\sh?\s*\d*\s?min?)/)
+    var miles = matches[1];
+    var time = matches[2];
+    $("#distance").val(miles)
     $("#time").val(time)
   },
 
