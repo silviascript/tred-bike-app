@@ -49,6 +49,11 @@ body {
   margin: -1px;
   float: right;
  }
+ .fa-info-circle{
+   font-size: 2em;
+   margin: 8px 1px 1px 10px;
+
+ }
 .navbar-default .navbar-nav>li>a {
   color: #55acee;
   font-size: 1.3em;
