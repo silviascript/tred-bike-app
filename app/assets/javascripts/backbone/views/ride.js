@@ -37,6 +37,7 @@ App.Views.Ride = Backbone.View.extend({
   update: function() {
     event.preventDefault();
     var data = {
+      date: this.$("[name='date']").val(),
       start: this.$("[name='start']").val(),
       end: this.$("[name='end']").val(),
       distance: this.$("[name='distance']").val(),

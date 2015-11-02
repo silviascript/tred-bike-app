@@ -2,6 +2,7 @@
 <html>
 <head>
   <script src="https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css" rel="stylesheet" />
   <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css" rel="stylesheet" />
   <script src='https://api.mapbox.com/mapbox.js/plugins/mapbox-directions.js/v0.3.0/mapbox.directions.js'></script>
@@ -24,6 +25,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" id="nav-items">
         <i class="fa fa-info-circle"></i>
+        <div id="intro"><p>Welcome to Tred Tracker. The purpose of this application is to keep track of all of your bike rides. Simply plug in start and stop points and let the app determine the miles you've travelled and estimate the time it took you. When you save a ride, you will have the option to change the information manually. If you'd like to make an edit to a ride after saving it, simply double click it on your rides table. The map choices also allow you to keep track of walks and drives, if that is something you'd like to do. You may tinker around on the site without logging in, but in order to save and keep track of all of your rides- please sign in with your twitter account. Happy riding.</p></div>
+
         <% if current_user %>
         <li class="twitter"><a href="/logout"><i class="fa fa-twitter"></i> Log Out</a></li>
         <% else %>
@@ -51,6 +54,7 @@
     <span class="close">[x]</span>
     <h2>New Ride</h2>
     <div class="new-ride">
+        <input id="date" placeholder="Date"></input>
         <input id="title" placeholder="Title"></input>
         <input id="start" placeholder="Origin" value=""></input>
         <input id="end" placeholder="Destination"></input>
@@ -65,6 +69,7 @@
   <div class="column column-10" id="table">
     <table id="table">
     <thead>
+      <th>Date</th>
       <th>Title</th>
       <th>Origin</th>
       <th>Destination</th>

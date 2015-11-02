@@ -1,24 +1,20 @@
 class RidesController < ApplicationController
 
   def index
-    @user = User.find(params[:user_id])
+    @user = User.find(params[:id])
     @rides = @user.rides
     render status: 200, json: @rides.to_json
   end
 
   def show
-    @user = User.find(params[:id])
     @rides = @user.rides
-    # @ride = Ride.find(params[:id])
+    @ride = Ride.find(params[:id])
     render status: 200, json: @ride.to_json
   end
 
   def create
-    binding.pry
-    byebug
-    @user = User.find(params[:user_id])
-    binding.pry
-     @ride = Ride.create!(ride_params(:user_id)
+    @user
+    @ride = Ride.create!(ride_params(:user_id))
     if @ride.save
       render json: @ride.to_json, status: 200
     end
@@ -41,6 +37,9 @@ class RidesController < ApplicationController
   private
   def ride_params
     params.require(:ride).permit(:start, :end, :distance, :time, :title, :user_id)
+  end
+  def set_user
+    @user = User.find(params[:user_id])
   end
 
 end

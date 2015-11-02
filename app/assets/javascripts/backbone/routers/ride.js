@@ -1,8 +1,8 @@
 App.Routers.Ride = Backbone.Router.extend({
   routes: {
-    '': 'index',
-    'rides/new': 'newRide',
-    'rides/:id/edit': 'editRide'
+    '/users/:user_id/rides': 'index',
+    '/users/:user_id/rides/new': 'newRide',
+    '/users/:user_id/rides/:id/edit': 'editRide'
   },
   initialize: function(){
     App.Collections.rides = new App.Collections.Rides();
@@ -38,7 +38,7 @@ App.Routers.Ride = Backbone.Router.extend({
           .addTo(map);
 
   },
-  
+
   index: function(){
     $("#new-ride-modal").hide();
     App.Collections.rides.fetch()

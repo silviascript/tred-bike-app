@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20151005195702) do
   enable_extension "plpgsql"
 
   create_table "rides", force: :cascade do |t|
+    t.string  "date"
     t.string  "start"
     t.string  "end"
     t.string  "distance"

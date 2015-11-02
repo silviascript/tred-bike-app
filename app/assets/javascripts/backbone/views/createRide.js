@@ -27,6 +27,7 @@ App.Views.CreateRide = Backbone.View.extend({
   create: function(event) {
     event.preventDefault();
     var formData = {
+      date:    $("#date").val(),
       start:    $("#start").val(),
       end:      $("#end").val(),
       distance: $("#distance").val(),

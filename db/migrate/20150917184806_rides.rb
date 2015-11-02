@@ -1,6 +1,7 @@
 class Rides < ActiveRecord::Migration
   def change
     create_table :rides do |t|
+      t.string :date
       t.string :start
       t.string :end
       t.string :distance
